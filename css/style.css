@@ -193,7 +193,7 @@ section.light{
     border: solid 2px #21263a;
     font-size: 20px;
     color: #21263a;
-    background: 0 0;
+    background: transparent;
     transition: all .3s ease-in-out;
 }
 
@@ -201,14 +201,14 @@ section.light{
 .btn-secondary-dark:focus,
 .btn-secondary-dark:active,
 .btn-secondary-dark.active {
-    border: solid 2px #21263a;
-    color: #32374b;
+    border: 2px solid #21263a;
+    color: #fff;
     background: #21263a;
 }
 
 .btn-white {
     margin-top: 15px;
-    border: solid 2px #fff;
+    border: 2px solid #fff;
     font-size: 20px;
     color: #fff;
     background: transparent;
@@ -219,7 +219,7 @@ section.light{
 .btn-white:focus,
 .btn-white:active,
 .btn-white.active {
-    border: solid 2px #fff;
+    border: 2px solid #fff;
     color: #e65d5d;
     background: #fff;
 }
@@ -264,6 +264,26 @@ footer .footer-below {
     padding: 25px 0;
     color:#32374b ;
     background-color: #21263a;
+}
+
+/* unvisited link */
+footer a:link {
+    color: #21263a;
+}
+
+/* visited link */
+footer a:visited {
+    color: #21263a;
+}
+
+/* mouse over link */
+footer a:hover {
+    color: #e65d5d;
+}
+
+/* selected link */
+footer a:active {
+    color: #e65d5d;
 }
 
 /*** Resume Section
@@ -345,22 +365,3 @@ footer .footer-below {
     background-color: #e65d5d;
 }
 
-/* unvisited link */
-a:link {
-    color: #21263a;
-}
-
-/* visited link */
-a:visited {
-    color: #21263a;
-}
-
-/* mouse over link */
-a:hover {
-    color: #e65d5d;
-}
-
-/* selected link */
-a:active {
-    color: #e65d5d;
-}
