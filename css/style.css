@@ -1,0 +1,325 @@
+/****Colors
+    red-color:#e65d5d
+    dark-red-color:#a72626
+    light-gray-color:#b8b8b9
+    light-blue-grey-color:#8e92a3
+    dark-blue-gray-color:#32374b
+    darker-blue-gray-color:#21263a
+****/
+
+body {
+    overflow-x: hidden;
+    background: #e65d5d;
+}
+
+p {
+    font-size: 20px;
+}
+
+p.small {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: #d13c4d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+hr{
+  margin-top: 60px;  
+}
+
+hr.light{
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #fff; /* old IE */
+    background-color: #fff;
+    width: 40%;
+}
+
+hr.primary{
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #a72626; /* old IE */
+    background-color: #a72626;
+    width: 40%;
+}
+
+hr.primary-dark{
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #e65d5d; /* old IE */
+    background-color: #e65d5d;
+    width: 40%;
+}
+
+hr.secondary{
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #32374b; /* old IE */
+    background-color: #32374b;
+    width: 40%;
+}
+
+hr.secondary-dark{
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #21263a; /* old IE */
+    background-color: #21263a;
+    width: 40%;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.img-small {
+    max-height: 250px;
+    max-width: 250px;
+}
+
+
+
+header {
+    text-align: center;
+    color: #fff;
+    background: #e65d5d;
+}
+
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header .intro-text .name {
+    display: block;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+@media(min-width:768px) {
+    header .container {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    header .intro-text .name {
+        font-size: 4.75em;
+    }
+
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
+
+@media(min-width:768px) {
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 1.5em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+}
+
+.navbar {
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+section {
+    padding: 100px 0;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+section.dark{
+    color: #21263a;
+    background: #32374b;
+}
+
+section.light{
+    color: #32374b ;
+    background: #fff;
+}
+
+@media(max-width:767px) {
+    section {
+        padding: 50px;
+    }
+}
+
+.btn-secondary-dark {
+    margin-top: 15px;
+    border: solid 2px #21263a;
+    font-size: 20px;
+    color: #21263a;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-secondary-dark:hover,
+.btn-secondary-dark:focus,
+.btn-secondary-dark:active,
+.btn-secondary-dark.active {
+    border: solid 2px #21263a;
+    color: #32374b;
+    background: #21263a;
+}
+
+/***Contact
+***/
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+}
+
+
+/***Footer
+***/
+footer {
+    color: #21263a;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+footer .footer-above {
+    padding-top: 50px;
+    background-color: #32374b;
+}
+
+footer .footer-col {
+    margin-bottom: 50px;
+}
+
+footer .footer-below {
+    padding: 25px 0;
+    color:#e65d5d ;
+    background-color: #21263a;
+}
+
+/*** Resume Section
+***/
+#resume h3.section{
+    color: #32374b;
+    border-bottom: 3px solid #e65d5d;
+    padding-bottom: 5px;
+    text-align: center;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#resume h4.title{
+    color: #32374b;
+    font-size: 25px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+#resume h5.tag{
+    color: #8e92a3;
+    font: 20px 'librebaskerville-italic', serif;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+#resume b{
+    color: #b8b8b9;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 100;
+}
+
+@media(max-width:767px) {
+    #resume h4.title{
+        text-align: center;
+    }
+    
+    #resume h5.tag{
+        text-align: center;
+    }
+    
+    #resume b{
+        text-align: center;
+    }
+
+}
+
+#about{
+    padding-top: 70px;
+}
+
+#contact{
+    padding-top: 70px;
+}
+
+.progress{
+    height: 30px;
+    box-shadow: none;
+}
+
+.progress-bar{
+    font-size: 20px;
+    line-height: 30px;
+    box-shadow: none;
+    text-align: left;
+    padding-left:10px;
+    padding-right:10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.progress-bar-primary{
+    background-color: #e65d5d;
+}
+
