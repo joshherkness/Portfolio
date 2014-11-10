@@ -1,7 +1,7 @@
 /****Colors
     red-color:#e65d5d
     dark-red-color:#a72626
-    light-gray-color:#b8b8b9
+    light-gray-color:#cecece
     light-blue-grey-color:#8e92a3
     dark-blue-gray-color:#32374b
     darker-blue-gray-color:#21263a
@@ -10,10 +10,14 @@
 body {
     overflow-x: hidden;
     background: #e65d5d;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
 }
 
 p {
     font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
 }
 
 p.small {
@@ -36,7 +40,7 @@ h4,
 h5,
 h6 {
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 700;
 }
 
@@ -104,6 +108,7 @@ header {
     text-align: center;
     color: #fff;
     background: #e65d5d;
+    font-family: 'Oswald', sans-serif;
 }
 
 header .container {
@@ -119,14 +124,13 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 200;
 }
 
 header .intro-text .skills {
     font-size: 1.25em;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 @media(min-width:768px) {
@@ -156,8 +160,7 @@ header .intro-text .skills {
 
 .navbar {
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
 }
 
 section {
@@ -203,6 +206,24 @@ section.light{
     background: #21263a;
 }
 
+.btn-white {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white.active {
+    border: solid 2px #fff;
+    color: #e65d5d;
+    background: #fff;
+}
+
 /***Contact
 ***/
 .floating-label-form-group input,
@@ -241,7 +262,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    color:#e65d5d ;
+    color:#32374b ;
     background-color: #21263a;
 }
 
@@ -260,6 +281,7 @@ footer .footer-below {
 
 #resume h4.title{
     color: #32374b;
+    font-family: inherit;
     font-size: 25px;
     font-weight: 300;
     padding-top: 20px;
@@ -267,17 +289,17 @@ footer .footer-below {
 
 #resume h5.tag{
     color: #8e92a3;
-    font: 20px 'librebaskerville-italic', serif;
+    font-family: inherit;
     font-style: italic;
     padding-bottom: 20px;
+    font-weight: 100;
 }
 
 #resume b{
-    color: #b8b8b9;
+    color: #cecece;
+    font-family: inherit;
     font-weight: 100;
-    font-size: 15px;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 100;
+    font-size: 17px;
 }
 
 @media(max-width:767px) {
@@ -323,3 +345,22 @@ footer .footer-below {
     background-color: #e65d5d;
 }
 
+/* unvisited link */
+a:link {
+    color: #21263a;
+}
+
+/* visited link */
+a:visited {
+    color: #21263a;
+}
+
+/* mouse over link */
+a:hover {
+    color: #e65d5d;
+}
+
+/* selected link */
+a:active {
+    color: #e65d5d;
+}
