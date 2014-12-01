@@ -1,6 +1,6 @@
 /****Colors
-    red-color:#e65d5d
-    dark-red-color:#a72626
+    red-color:#50B36E
+    dark-red-color:#45995E
     light-gray-color:#cecece
     light-blue-grey-color:#8e92a3
     dark-blue-gray-color:#32374b
@@ -9,7 +9,7 @@
 
 body {
     overflow-x: hidden;
-    background: #e65d5d;
+    background: #fff;
     font-family: 'Oswald', sans-serif;
     font-weight: 100;
 }
@@ -24,13 +24,28 @@ p.small {
     font-size: 16px;
 }
 
+a.next-section {
+    outline: 0;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+}
+
+a.next-section:hover,
+a.next-section:focus,
+a.next-section:active,
+a.next-section.active {
+    outline: 0;
+    color: #45995E;
+}
+
 a,
 a:hover,
 a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #d13c4d;
+    color: #45995E;
 }
 
 h1,
@@ -61,8 +76,8 @@ hr.primary{
     border: none;
     height: 2px;
     /* Set the hr color */
-    color: #a72626; /* old IE */
-    background-color: #a72626;
+    color: #45995E; /* old IE */
+    background-color: #45995E;
     width: 40%;
 }
 
@@ -70,8 +85,8 @@ hr.primary-dark{
     border: none;
     height: 2px;
     /* Set the hr color */
-    color: #e65d5d; /* old IE */
-    background-color: #e65d5d;
+    color: #50B36E; /* old IE */
+    background-color: #50B36E;
     width: 40%;
 }
 
@@ -107,7 +122,7 @@ hr.secondary-dark{
 header {
     text-align: center;
     color: #fff;
-    background: #e65d5d;
+    background: #50B36E;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -194,7 +209,7 @@ section.light{
     font-size: 20px;
     color: #21263a;
     background: transparent;
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 .btn-secondary-dark:hover,
@@ -212,7 +227,7 @@ section.light{
     font-size: 20px;
     color: #fff;
     background: transparent;
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 .btn-white:hover,
@@ -220,7 +235,7 @@ section.light{
 .btn-white:active,
 .btn-white.active {
     border: 2px solid #fff;
-    color: #e65d5d;
+    color: #50B36E;
     background: #fff;
 }
 
@@ -278,19 +293,19 @@ footer a:visited {
 
 /* mouse over link */
 footer a:hover {
-    color: #e65d5d;
+    color: #50B36E;
 }
 
 /* selected link */
 footer a:active {
-    color: #e65d5d;
+    color: #50B36E;
 }
 
 /*** Resume Section
 ***/
 #resume h3.section{
     color: #32374b;
-    border-bottom: 3px solid #e65d5d;
+    border-bottom: 3px solid #50B36E;
     padding-bottom: 5px;
     text-align: center;
     position: relative;
@@ -362,6 +377,6 @@ footer a:active {
 }
 
 .progress-bar-primary{
-    background-color: #e65d5d;
+    background-color: #50B36E;
 }
 
