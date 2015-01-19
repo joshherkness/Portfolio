@@ -81,9 +81,9 @@ header .intro-text p{
     display: block;
     text-transform: none;
     font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
     padding-bottom: 25%;
     padding-top: 10%;
+    font-size: 75%;
 }
 
 @media(max-width:767px) {
@@ -127,7 +127,7 @@ section a:not(.btn), footer a:not(.btn) {
 }
 
 @media(max-width:480px) {
-    section p, section a, footer p, footer a, .jumbotron p, .jumbotron a {
+    section p, section a, footer p, footer a{
         font-size: 30px;
         font-weight: 300;
         text-align: center;
@@ -135,252 +135,9 @@ section a:not(.btn), footer a:not(.btn) {
 }
 
 @media(min-width:480px) {
-    section p, section a, footer p, footer a, .jumbotron p, .jumbotron a {
+    section p, section a, footer p, footer a{
         font-size: 40px;
         font-weight: 300;
         text-align: center;
     }
 }
-
-section.blog {
-    color: #fff;
-    background: #ee1356;
-}
-
-section.blog p {
-    color: #fff;
-}
-
-section.blog a:not(.btn) {
-    color: #fff;
-}
-
-section.blog a:hover:not(.btn){ 
-    color: #BA0F43;
-}
-
-section.about {
-    color: #fff;
-    background: #fff;
-}
-
-section.about p {
-    color: #7f8c8d;
-
-}
-
-section.about a:not(.btn) {
-    color: #7f8c8d;
-
-}
-
-section.about a:hover:not(.btn) { 
-    color: #4070f8;
-}
-
-section.education {
-    color: #fff;
-    background: #4070f8;
-}
-
-section.education p {
-    color: #fff;
-
-}
-
-section.education a:not(.btn) {
-    color: #fff;
-
-}
-
-section.education a:hover:not(.btn) { 
-    color: #3359C4;
-}
-
-section.interests {
-    color: #fff;
-    background: #fff;
-}
-
-section.interests p {
-    color: #7f8c8d;
-
-}
-
-section.interests a:not(.btn) {
-    color: #7f8c8d;
-
-}
-
-section.interests a:hover:not(.btn) { 
-    color: #2acd82;
-}
-
-section.skills {
-    color: #fff;
-    background: #2acd82;
-}
-
-section.skills p {
-    color: #fff;
-
-}
-
-section.skills a:not(.btn) {
-    color: #fff;
-
-}
-
-section.skills a:hover:not(.btn) { 
-    color: #1F9961;
-}
-
-section.email {
-    color: #fff;
-    background: #fff;
-}
-
-footer.email p {
-    background: transparent;
-    color: #7f8c8d;
-    padding-bottom: 100px;
-}
-
-footer.email a:not(.btn) {
-    color: #7f8c8d;
-}
-
-footer.email a:hover:not(.btn) { 
-    color: #2acd82;
-}
-
-footer.email p.mark {
-    padding-top: 100px;
-    color: #7f8c8d;
-    font-size: 12px;
-    font-weight: 300;
-}
-
-@media(max-width:767px) {
-    footer.email p {
-        padding-bottom: 50px;
-    }
-    footer.email p.mark {
-        padding-top: 0px;
-    }
-}
-
-.btn {
-    font-family: "Open Sans", sans-serif;
-}
-
-.btn-github {
-    margin-top: 15px;
-    border: solid 2px #333333;
-    font-size: 20px;
-    font-weight: 300;
-    color: #fff;
-    background: #333333;
-}
-
-.btn-github:hover,
-.btn-github:focus,
-.btn-github:active,
-.btn-github.active {
-    border: 2px solid #1a1a1a;
-    color: #fff;
-    background: #1a1a1a;
-}
-
-.btn-linkedin {
-    margin-top: 15px;
-    border: solid 2px #4875b4;
-    font-size: 20px;
-    font-weight: 300;
-    color: #fff;
-    background: #4875b4;
-    transition: all .1s ease-in-out;
-}
-
-.btn-linkedin:hover,
-.btn-linkedin:focus,
-.btn-linkedin:active,
-.btn-linkedin.active {
-    border: 2px solid #3e659c;
-    color: #fff;
-    background: #3e659c;
-}
-
-.btn-mail {
-    margin-top: 15px;
-    border: solid 2px #2acd82;
-    font-size: 20px;
-    font-weight: 300;
-    color: #fff;
-    background: #2acd82;
-    transition: all .1s ease-in-out;
-}
-
-.btn-mail:hover,
-.btn-mail:focus,
-.btn-mail:active,
-.btn-mail.active {
-    border: 2px solid #24b370;
-    color: #fff;
-    background: #24b370;
-}
-
-.btn-github,
-.btn-linkedin,
-.btn-mail,
-.btn{
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-    transition: all .1s ease-in-out;
-}
-
-.btn-mail:hover,
-.btn-mail:focus,
-.btn-mail:active,
-.btn-mail.active,
-.btn-linkedin:hover,
-.btn-linkedin:focus,
-.btn-linkedin:active,
-.btn-linkedin.active,
-.btn-github:hover,
-.btn-github:focus,
-.btn-github:active,
-.btn-github.active,
-.btn:hover,
-.btn:focus,
-.btn:active,
-.btn.active{
-    -webkit-transform: translate(0,-0.25em);
-    -moz-transform: translate(0,-0.25em);
-    -o-transform: translate(0,-0.25em);
-    -ms-transform: translate(0,-0.25em);
-    transform: translate(0,-0.25em);
-}
-
-#about{
-    padding-top: 70px;
-}
-
-#education{
-    padding-top: 70px;
-}
-
-#interest{
-    padding-top: 70px;
-}
-
-#skills{
-    padding-top: 70px;
-}
-
-#email{
-    padding-top: 70px;
-}
-
-
