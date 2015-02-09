@@ -272,6 +272,7 @@ footer.email p.mark {
 
 .btn {
     font-family: "Open Sans", sans-serif;
+    border-radius: 3px;
 }
 
 .btn-github {
