@@ -1,387 +1,169 @@
-/****New Colors
-    red-color:#ee1356
-    dark-red-color:#d4114b
-    dark-dark-red-color:#BA0F43 
-    grey-color:#7f8c8d
-    green-color:#2acd82
-    dark-green-color:#24b370
-    dark-dark-green-color: #1F9961
-    blue-color:#4070f8
-    dark-blue-color:#3a65de
-    dark-dark-blue-color:#3359C4
-    linked-in-color:#4875b4
-    dark-linked-in-color:#3e659c
-    github-color:#333333
-    dark-github-color:#1a1a1a
-    mail-color:#2acd82
-    dark-mail-color:#24b370
-****/
-
-panel-default{
-    padding-left: 100px;
-}
+html {
+  font-family: "Economica", "Open Sans", Helvetica, sans-serif;
+  color: #7f8c8d;
+  font-weight: 400;
+  text-transform: uppercase; }
 
 body {
-    overflow-x: hidden;
-    background: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-}
+  overflow-x: hidden;
+  background: white;
+  font-family: "Economica", "Open Sans", Helvetica, sans-serif;
+  font-weight: 400; }
 
 p {
-    font-size: 20px;
-}
+  font-size: 20px; }
+  p .small {
+    font-size: 16px; }
+  p .large {
+    font-size: 24px; }
 
-p.small {
-    font-size: 16px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-transform: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-}
-
-header hr{
-    margin-top: 60px;  
-}
-
-.img-centered {
-    margin: 0 auto;
-}
-
-.img-small {
-    max-height: 250px;
-    max-width: 250px;
-}
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-family: "Economica", "Open Sans", Helvetica, sans-serif; }
 
 header {
-    text-align: center;
-    color: #7f8c8d;
-    background: #fff;
-    font-family: 'Open Sans', sans-serif;
-}
-
-header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-header img {
+  background: white;
+  color: #7f8c8d;
+  font-family: "Economica", "Open Sans", Helvetica, sans-serif; }
+  header .container {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  header img {
     display: block;
-    margin: 0 auto 20px;
-}
-
-header .intro-text p{
+    margin: 0 auto 20px; }
+  header .img-large {
+    min-height: 250px;
+    min-width: 250px; }
+  header .intro-text h1, header .intro-text h2, header .intro-text h3, header .intro-text h4, header .intro-text h5, header .intro-text h6 {
+    font-family: "Economica", "Open Sans", Helvetica, sans-serif;
+    font-weight: 400;
     display: block;
-    text-transform: none;
-    font-family: 'Open Sans', sans-serif;
     font-size: 40px;
     padding-bottom: 25%;
-    padding-top: 10%;
-}
+    padding-top: 10%; }
+  header .intro-text span.name {
+    color: #ee1356; }
 
-@media(max-width:767px) {
-    header .intro-text p {
-        padding-bottom: 50px;
-        padding-top: 50px;
-    }
-}
-
-header .intro-text span.name{
-    color: #ee1356;
-}
-
-section a:hover:not(.btn),
-section a:focus:not(.btn),
-section a:active:not(.btn),
-section a.active:not(.btn),
-footer a:hover:not(.btn),
-footer a:focus:not(.btn),
-footer a:active:not(.btn),
-footer a.active:not(.btn){
-    -webkit-transform: translate(0,-0.1em);
-    -moz-transform: translate(0,-0.1em);
-    -o-transform: translate(0,-0.1em);
-    -ms-transform: translate(0,-0.1em);
-    transform: translate(0,-0.1em);
-}
-
-section, footer {
-    padding: 100px 0;
-}
-
-section a:not(.btn), footer a:not(.btn) {
-    text-decoration: underline;
-    display:inline-block;
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-    -ms-transition: 1s ease-in-out;
-    transition: all .1s ease-in-out;
-}
-
-@media(max-width:480px) {
-    section p, section a, footer p, footer a, .jumbotron p, .jumbotron a {
-        font-size: 30px;
-        font-weight: 300;
-        text-align: center;
-    }
-}
-
-@media(min-width:480px) {
-    section p, section a, footer p, footer a, .jumbotron p, .jumbotron a {
-        font-size: 40px;
-        font-weight: 300;
-        text-align: center;
-    }
-}
-
-section.blog {
-    color: #fff;
-    background: #ee1356;
-}
-
-section.blog p {
-    color: #fff;
-}
-
-section.blog a:not(.btn) {
-    color: #fff;
-}
-
-section.blog a:hover:not(.btn){ 
-    color: #BA0F43;
-}
-
-section.about {
-    color: #fff;
-    background: #fff;
-}
-
-section.about p {
-    color: #7f8c8d;
-
-}
-
-section.about a:not(.btn) {
-    color: #7f8c8d;
-
-}
-
-section.about a:hover:not(.btn) { 
-    color: #4070f8;
-}
-
-section.education {
-    color: #fff;
-    background: #4070f8;
-}
-
-section.education p {
-    color: #fff;
-
-}
-
-section.education a:not(.btn) {
-    color: #fff;
-
-}
-
-section.education a:hover:not(.btn) { 
-    color: #3359C4;
-}
-
-section.interests {
-    color: #fff;
-    background: #fff;
-}
-
-section.interests p {
-    color: #7f8c8d;
-
-}
-
-section.interests a:not(.btn) {
-    color: #7f8c8d;
-
-}
-
-section.interests a:hover:not(.btn) { 
-    color: #2acd82;
-}
-
-section.skills {
-    color: #fff;
-    background: #2acd82;
-}
-
-section.skills p {
-    color: #fff;
-
-}
-
-section.skills a:not(.btn) {
-    color: #fff;
-
-}
-
-section.skills a:hover:not(.btn) { 
-    color: #1F9961;
-}
-
-section.email {
-    color: #fff;
-    background: #fff;
-}
-
-footer.email p {
-    background: transparent;
-    color: #7f8c8d;
-    padding-bottom: 100px;
-}
-
-footer.email a:not(.btn) {
-    color: #7f8c8d;
-}
-
-footer.email a:hover:not(.btn) { 
-    color: #2acd82;
-}
-
-footer.email p.mark {
-    padding-top: 100px;
-    color: #7f8c8d;
-    font-size: 12px;
-    font-weight: 300;
-}
-
-@media(max-width:767px) {
-    footer.email p {
-        padding-bottom: 50px;
-    }
-    footer.email p.mark {
-        padding-top: 0px;
-    }
-}
-
-.btn {
-    font-family: "Open Sans", sans-serif;
-    border-radius: 3px;
-}
-
-.btn-github {
-    margin-top: 15px;
-    border: solid 2px #333333;
-    font-size: 20px;
-    font-weight: 300;
-    color: #fff;
-    background: #333333;
-}
-
-.btn-github:hover,
-.btn-github:focus,
-.btn-github:active,
-.btn-github.active {
-    border: 2px solid #1a1a1a;
-    color: #fff;
-    background: #1a1a1a;
-}
-
-.btn-linkedin {
-    margin-top: 15px;
-    border: solid 2px #4875b4;
-    font-size: 20px;
-    font-weight: 300;
-    color: #fff;
-    background: #4875b4;
-    transition: all .1s ease-in-out;
-}
-
-.btn-linkedin:hover,
-.btn-linkedin:focus,
-.btn-linkedin:active,
-.btn-linkedin.active {
-    border: 2px solid #3e659c;
-    color: #fff;
-    background: #3e659c;
-}
-
-.btn-mail {
-    margin-top: 15px;
-    border: solid 2px #2acd82;
-    font-size: 20px;
-    font-weight: 300;
-    color: #fff;
-    background: #2acd82;
-    transition: all .1s ease-in-out;
-}
-
-.btn-mail:hover,
-.btn-mail:focus,
-.btn-mail:active,
-.btn-mail.active {
-    border: 2px solid #24b370;
-    color: #fff;
-    background: #24b370;
-}
-
-.btn-github,
-.btn-linkedin,
-.btn-mail,
-.btn{
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-    transition: all .1s ease-in-out;
-}
-
-.btn-mail:hover,
-.btn-mail:focus,
-.btn-mail:active,
-.btn-mail.active,
-.btn-linkedin:hover,
-.btn-linkedin:focus,
-.btn-linkedin:active,
-.btn-linkedin.active,
-.btn-github:hover,
-.btn-github:focus,
-.btn-github:active,
-.btn-github.active,
-.btn:hover,
-.btn:focus,
+@media (max-width: 767px) {
+  header .intro-text h1, header .intro-text h2, header .intro-text h3, header .intro-text h4, header .intro-text h5, header .intro-text h6 {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-size: 30px; } }
 .btn:active,
-.btn.active{
-    -webkit-transform: translate(0,-0.25em);
-    -moz-transform: translate(0,-0.25em);
-    -o-transform: translate(0,-0.25em);
-    -ms-transform: translate(0,-0.25em);
-    transform: translate(0,-0.25em);
-}
+.btn.active {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
 
-#about{
-    padding-top: 70px;
-}
+section a:hover:not(.btn) {
+  text-decoration: none; }
+section a.btn {
+  font-size: 30px;
+  width: 100%; }
+section.social {
+  background: #ee1356;
+  color: white; }
+  section.social a.btn-github {
+    background: #ba0f43;
+    color: white; }
+  section.social a.btn-github:hover,
+  section.social a.btn-github:focus,
+  section.social a.btn-github:active,
+  section.social a.btn-github.active {
+    background: #d4114b;
+    color: white; }
+  section.social a.btn-linkedin {
+    background: #ba0f43;
+    color: white; }
+  section.social a.btn-linkedin:hover,
+  section.social a.btn-linkedin:focus,
+  section.social a.btn-linkedin:active,
+  section.social a.btn-linkedin.active {
+    background: #d4114b;
+    color: white; }
+  section.social a.btn-mail {
+    background: #ba0f43;
+    color: white; }
+  section.social a.btn-mail:hover,
+  section.social a.btn-mail:focus,
+  section.social a.btn-mail:active,
+  section.social a.btn-mail.active {
+    background-color: #d4114b;
+    color: white; }
+section.journal {
+  background: white;
+  color: #7f8c8d; }
+  section.journal a {
+    color: #ee1356; }
+section.about {
+  background: #4070f8;
+  color: white; }
+  section.about a {
+    color: white; }
+  section.about a.btn-resume {
+    background: #3359c4;
+    color: white; }
+  section.about a.btn-resume:hover,
+  section.about a.btn-resume:focus,
+  section.about a.btn-resume:active,
+  section.about a.btn-resume.active {
+    background-color: #3a65de;
+    color: white; }
+section.education {
+  background: white;
+  color: #7f8c8d; }
+  section.education a {
+    color: #fbeb3a; }
+section.interests {
+  background: #2acd82;
+  color: white; }
+  section.interests a {
+    color: white; }
+section.skills {
+  background: white;
+  color: #7f8c8d; }
+  section.skills a {
+    color: #2acd82; }
+section.contact {
+  background: #fafafa;
+  color: #7f8c8d; }
+  section.contact a {
+    color: #2acd82; }
 
-#education{
-    padding-top: 70px;
-}
+footer {
+  background: #fafafa;
+  color: #7f8c8d;
+  font-size: 10px;
+  text-align: center;
+  padding: 100px 0; }
 
-#interest{
-    padding-top: 70px;
-}
+#social {
+  padding: 100px 0; }
 
-#skills{
-    padding-top: 70px;
-}
+#journal {
+  padding: 100px 0; }
 
-#email{
-    padding-top: 70px;
-}
+#about {
+  padding: 100px 0; }
 
+#education {
+  padding: 100px 0; }
 
+#interests {
+  padding: 100px 0; }
+
+#skills {
+  padding: 100px 0; }
+
+#contact {
+  padding: 100px 0; }
+
+@media (max-width: 480px) {
+  section p, section a, .jumbotron p, .jumbotron a {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center; } }
+@media (min-width: 480px) {
+  section p, section a, .jumbotron p, .jumbotron a {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center; } }

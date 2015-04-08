@@ -24,38 +24,46 @@ $mail-color-dark: #24b370;
 $dribbble-color: #ea4c89;
 $dribbble-color-dark: #D1447A;
 
-$font-stack: 'Open Sans', Helvetica, sans-serif;
+// Fonts
+$font-stack: 'Economica', 'Open Sans', Helvetica, sans-serif;
 
 html {
 	font-family: $font-stack;
 	color: $gray-color;
-	font-weight: 300;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 body {
     overflow-x: hidden;
     background: white;
     font-family: $font-stack;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 p {
     font-size: 20px;
 	
+	// Small Serif
 	.small{
 		font-size: 16px;
 	}
+	
+	// Large Serif
+	.large{
+		font-size: 24px;
+	}
 }
 
-hr {
-    	margin-top: 60px;  
-}
-
+// All headers
 h1,h2,h3,h4,h5,h6{
+	
+	// ALign all headers in the center
 	text-align: center;
 	font-family: $font-stack;
 }
 
+// Header
 header {
 	
 	background: white;
@@ -67,11 +75,13 @@ header {
     	padding-bottom: 50px;
 	}
 	
+	// Center logo
 	img {
     	display: block;
     	margin: 0 auto 20px;
 	}
 	
+	// Special size constraint for a larger logo.
 	.img-large {
     	min-height: 250px;
     	min-width: 250px;
@@ -81,19 +91,21 @@ header {
 		
 		h1,h2,h3,h4,h5,h6 {
 			font-family: $font-stack;
-			font-weight: 300;
+			font-weight: 400;
     		display: block;
     		font-size: 40px;
     		padding-bottom: 25%;
     		padding-top: 10%;
 		}
 		
+		// Attributes of emphisized text in intro text.
 		span.name{
     		color: $red-color;
 		}
 	}
 }
 
+// When screen width is less than 767px
 @media(max-width:767px) {
 	
     header {
@@ -107,25 +119,31 @@ header {
     }
 }
 
-.img-centered {
-    margin: 0 auto;
+// Remove shadow from the inside of btn objects.
+.btn:active,
+.btn.active {
+	-webkit-box-shadow: none;
+  	box-shadow: none;
 }
 
 section {
 	
+	// Remove underlines from links.
 	a:hover:not(.btn){
 		text-decoration: none;
 	}
 	
+	// Change the button attributes for all sections
 	a.btn {
 		font-size: 30px;
 		width: 100%;
 	}
 	
+	// Social Section
 	&.social {
 		
 		background: $red-color;
-		
+		color: white;
 		
 		a.btn-github {
 			background: $red-color-dark-dark;
@@ -167,7 +185,9 @@ section {
 		}
 	}
 	
+	// Jounal section
 	&.journal {
+		
 		background: white;
 		color: $gray-color;
 		
@@ -176,7 +196,9 @@ section {
 		}
 	}
 	
+	// About section
 	&.about {
+		
 		background: $blue-color;
 		color: white;
 		
@@ -198,6 +220,7 @@ section {
 		}
 	}
 	
+	// Education Section
 	&.education {
 		background: white;
 		color: $gray-color;
@@ -207,6 +230,7 @@ section {
 		}
 	}
 	
+	// Interests Section
 	&.interests {
 		background: $green-color;
 		color: white;
@@ -216,6 +240,7 @@ section {
 		}
 	}
 	
+	// Skills Section
 	&.skills {
 		background: white;
 		color: $gray-color;
@@ -225,6 +250,7 @@ section {
 		}
 	}
 	
+	// Contact Section
 	&.contact {
 		background: $gray-color-light;
 		color: $gray-color;
@@ -235,6 +261,7 @@ section {
 	}
 }
 
+// Footer
 footer {
 	
 	background: $gray-color-light;
@@ -277,7 +304,7 @@ footer {
 	
     section p, section a, .jumbotron p, .jumbotron a {
         font-size: 30px;
-        font-weight: 300;
+        font-weight: 400;
         text-align: center;
     }
 }
@@ -286,7 +313,7 @@ footer {
 	
     section p, section a, .jumbotron p, .jumbotron a {
         font-size: 40px;
-        font-weight: 300;
+        font-weight: 400;
         text-align: center;
     }
 }
