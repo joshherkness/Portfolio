@@ -1,0 +1,46 @@
+/*
+ * bootstrap_override_custom.scss
+ * joshherkness.github.io
+ * 
+ * Copyright 2015 Joshua Herkness
+ */
+
+//Scheme Colors
+$red-color: #ee1356;
+$red-color-dark: #d4114b;
+$red-color-dark-dark: #BA0F43;
+$gray-color-light: #fafafa;
+$gray-color: #7f8c8d;
+$green-color:#2acd82;
+$green-color-dark: #24b370;
+$green-color-dark-dark: #1F9961;
+$blue-color: #4070f8;
+$blue-color-dark: #3a65de;
+$blue-color-dark-dark: #3359C4;
+$yellow-color: #fbeb3a;
+$yellow-color-dark: #E0D234;
+$yellow-color-dark-dark: #C7BA2E;
+
+//Social Colors
+$linkedin-color: #4875b4;
+$linkedin-color-dark: #3e659c;
+$github-color: #333333;
+$github-color-dark: #1a1a1a;
+$mail-color: #2acd82;
+$mail-color-dark: #24b370;
+$dribbble-color: #ea4c89;
+$dribbble-color-dark: #D1447A;
+
+// Limits the width of any container.
+@media (min-width: 992px) {
+   .container {
+	   width: 800px;
+   }
+}
+
+// Limits the width of any container.
+@media (min-width: 1200px) {
+	.container {
+		width: 800px;
+	}
+}
