@@ -87,13 +87,11 @@ header {
 	background: white;
     color: $gray-color;
 	font-family: $font-stack;
-	height: 100%;
-	margin: 0;
-	padding: 0;
+	padding-top: 50px;
 	
 	.container {
-    	//padding-top: 50px;
-    	//padding-bottom: 50px;
+    	padding-top: 50px;
+    	padding-bottom: 50px;
 	}
 	
 	// Center logo
@@ -115,8 +113,8 @@ header {
 			font-weight: 400;
     		display: block;
     		font-size: 40px;
-    		//padding-bottom: 25%;
-    		//padding-top: 10%;
+    		padding-bottom: 25%;
+    		padding-top: 10%;
 		}
 		
 		// Attributes of emphisized text in intro text.
@@ -147,15 +145,18 @@ header {
   	box-shadow: none;
 }
 
+/*
 .fill {
 	min-height: 100%;
 	height: 100%;
 }
-
+*/
+/*
 .center-v {
     display: flex;
     align-items: center;
 }
+*/
 
 section {
 	
