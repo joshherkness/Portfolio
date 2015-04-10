@@ -30,17 +30,3 @@ $mail-color: #2acd82;
 $mail-color-dark: #24b370;
 $dribbble-color: #ea4c89;
 $dribbble-color-dark: #D1447A;
-
-// Limits the width of any container.
-@media (min-width: 992px) {
-   .container {
-	   width: 800px;
-   }
-}
-
-// Limits the width of any container.
-@media (min-width: 1200px) {
-	.container {
-		width: 800px;
-	}
-}
