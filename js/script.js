@@ -40,12 +40,42 @@ function startCounter(startDate) {
         $(".minutes").text(minutes);
         $(".seconds").text(seconds);
         
+        if (years != 1) {
+            $(".years-lable").text("years");
+        } else {
+            $(".years-lable").text("year");
+        }
+        
+        if (days != 1) {
+            $(".days-lable").text("days");
+        } else {
+            $(".days-lable").text("day");
+        }
+        
+        if (hours != 1) {
+            $(".hours-lable").text("hours");
+        } else {
+            $(".hours-lable").text("hour");
+        }
+        
+        if (minutes != 1) {
+            $(".minutes-lable").text("minutes");
+        } else {
+            $(".minutes-lable").text("minute");
+        }
+        
+        if (seconds != 1) {
+            $(".seconds-lable").text("seconds");
+        } else {
+            $(".seconds-lable").text("second");
+        }
+        
     }, 1000);
 }
 
 window.onload = function () {
     
-    var startDate = new Date("September 11, 2012 12:00:00");
+    var startDate = new Date("September 8, 2012 12:00:00");
 
     setTimeout(startCounter(startDate), 1000);
     
