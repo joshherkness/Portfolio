@@ -52,6 +52,7 @@ body {
     background: white;
     font-family: $font-stack;
     font-weight: bold;
+    overflow-x: hidden;
 }
 
 html, body {
@@ -445,7 +446,6 @@ footer {
  * Blinking cursor animation
  */
 .blinking-cursor {
-    display: block;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
   -ms-animation: 1s blink step-end infinite;

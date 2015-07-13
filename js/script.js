@@ -84,7 +84,7 @@ window.onload = function () {
      * Objects to be used as waypoints
      * to-do: Figure out how to use an array
      */
-    var social = $('.social');
+    //var social = $('.social');
     var journal = $('.journal');
     var about = $('.about');
     var education = $('.education');
@@ -94,7 +94,7 @@ window.onload = function () {
     /*
      * Hide waypoints
      */
-    social.animate({opacity: 0}, 0);
+    //social.animate({opacity: 0}, 0);
     journal.animate({opacity: 0}, 0);
     about.animate({opacity: 0}, 0);
     education.animate({opacity: 0}, 0);
@@ -104,9 +104,11 @@ window.onload = function () {
     /*
      * Create waypoint functions
      */
+    /*
     social.waypoint(function(){
         social.animate({opacity: 1});
-    }, {offset: '75%'});
+    }, {offset: '60%'});
+    */
     journal.waypoint(function(){
         journal.animate({opacity: 1});
     }, {offset: '75%'});
