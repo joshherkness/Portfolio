@@ -8,19 +8,21 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Economica", "Open Sans", Helvetica, sans-serif;
+  font-family: "Montserrat", "Open Sans", "Economica", Helvetica, sans-serif;
   color: #7f8c8d;
-  font-weight: bold;
-  text-transform: uppercase; }
+  font-weight: 100; }
 
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   background: white;
-  font-family: "Economica", "Open Sans", Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "Montserrat", "Open Sans", "Economica", Helvetica, sans-serif;
+  font-weight: 100;
   overflow-x: hidden; }
+
+nav .logo {
+  height: 100%; }
 
 html, body {
   max-width: 100%; }
@@ -68,8 +70,8 @@ p {
   font-family: "Source Code Pro", sans-serif;
   border-radius: 5px;
   background-color: white;
-  color: #4070f8;
-  padding: 5px;
+  color: #ee1356;
+  padding: 20px 10px;
   background: -moz-linear-gradient(top, white 50%, #fafafa 50%);
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), color-stop(50%, #fafafa));
@@ -94,12 +96,12 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  font-family: "Economica", "Open Sans", Helvetica, sans-serif; }
+  font-family: "Montserrat", "Open Sans", "Economica", Helvetica, sans-serif; }
 
 header {
   background: white;
   color: #7f8c8d;
-  font-family: "Economica", "Open Sans", Helvetica, sans-serif;
+  font-family: "Montserrat", "Open Sans", "Economica", Helvetica, sans-serif;
   padding-top: 50px; }
   header .container {
     padding-top: 50px;
@@ -111,15 +113,23 @@ header {
     min-height: 250px;
     min-width: 250px; }
   header .intro-text h1, header .intro-text h2, header .intro-text h3, header .intro-text h4, header .intro-text h5, header .intro-text h6 {
-    font-family: "Economica", "Open Sans", Helvetica, sans-serif;
-    font-weight: normal;
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: 300;
     display: block;
     font-size: 40px;
     padding-bottom: 10%;
     padding-top: 10%; }
   header .intro-text span.name {
     color: #ee1356;
-    font-weight: normal; }
+    font-weight: 100; }
+  header .intro-text span.r {
+    color: #ee1356; }
+  header .intro-text span.g {
+    color: #2acd82; }
+  header .intro-text span.b {
+    color: #4070f8; }
+  header .intro-text span.y {
+    color: #fbeb3a; }
 
 @media (max-width: 767px) {
   header .intro-text h1, header .intro-text h2, header .intro-text h3, header .intro-text h4, header .intro-text h5, header .intro-text h6 {
@@ -136,41 +146,14 @@ section a:hover:not(.btn) {
 section a.btn {
   font-size: 30px;
   width: 100%; }
-section.social {
+section.quote {
+  background: #fafafa;
+  color: #7f8c8d; }
+  section.quote b {
+    color: #fbeb3a; }
+section.counter {
   background: #ee1356;
   color: white; }
-  section.social a.btn-github {
-    background: #ba0f43;
-    color: white; }
-  section.social a.btn-github:hover,
-  section.social a.btn-github:focus,
-  section.social a.btn-github:active,
-  section.social a.btn-github.active {
-    background: #d4114b;
-    color: white; }
-  section.social a.btn-linkedin {
-    background: #ba0f43;
-    color: white; }
-  section.social a.btn-linkedin:hover,
-  section.social a.btn-linkedin:focus,
-  section.social a.btn-linkedin:active,
-  section.social a.btn-linkedin.active {
-    background: #d4114b;
-    color: white; }
-  section.social a.btn-mail {
-    background: #ba0f43;
-    color: white; }
-  section.social a.btn-mail:hover,
-  section.social a.btn-mail:focus,
-  section.social a.btn-mail:active,
-  section.social a.btn-mail.active {
-    background-color: #d4114b;
-    color: white; }
-section.journal {
-  background: white;
-  color: #7f8c8d; }
-  section.journal a {
-    color: #ee1356; }
 section.about {
   background: #4070f8;
   color: white; }
@@ -213,10 +196,10 @@ footer {
   text-align: center;
   padding: 100px 0; }
 
-#social {
+#quote {
   padding: 100px 0; }
 
-#journal {
+#counter {
   padding: 100px 0; }
 
 #about {
@@ -237,12 +220,12 @@ footer {
 @media (max-width: 480px) {
   section p, section a, .jumbotron p, .jumbotron a {
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 200;
     text-align: center; } }
 @media (min-width: 480px) {
   section p, section a, .jumbotron p, .jumbotron a {
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 200;
     text-align: center; } }
 @media (max-width: 922px) {
   .narrow {

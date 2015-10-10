@@ -22,6 +22,10 @@ $yellow-color-dark: #E0D234;
 $yellow-color-dark-dark: #C7BA2E;
 
 //Social Colors
+$facebook-color: #3B5998;
+$facebook-color-dark: #203767;
+$twitter-color: #4099FF;
+$twitter-color-dark: #1f84f7;
 $linkedin-color: #4875b4;
 $linkedin-color-dark: #3e659c;
 $github-color: #333333;
@@ -30,3 +34,85 @@ $mail-color: #2acd82;
 $mail-color-dark: #24b370;
 $dribbble-color: #ea4c89;
 $dribbble-color-dark: #D1447A;
+
+.navbar-brand {
+    height: 100px;
+    margine: 0 0;
+    padding: 0px
+}
+
+.navbar-nav > li > a{
+    padding: 20px 20px;
+    margin: 20px 10px;
+    max-height: 100px;
+}
+
+.navbar {
+    min-height:100px !important;
+    background-color: $gray-color-light;
+    opacity: 0.95;
+    border: 0px solid transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+    
+    &.btn-facebook {
+        background-color: $facebook-color;
+        color: white;
+    }
+    
+    &.btn-twitter {
+        background-color: $twitter-color;
+        color: white;
+    }
+    
+    &.btn-linkedin {
+        background-color: $linkedin-color;
+        color: white;
+    }
+    
+    &.btn-github {
+        background-color: $github-color;
+        color: white;
+    }
+    
+    &.btn-mail {
+        background-color: $mail-color;
+        color: white;
+    }
+    
+    &.btn-journal {
+        background-color: $yellow-color;
+        color: white;
+    }
+    
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active{
+    
+    &.btn-facebook {
+        background-color: $facebook-color-dark;
+    }
+    
+    &.btn-twitter {
+        background-color: $twitter-color-dark;
+    }
+    
+    &.btn-linkedin {
+        background-color: $linkedin-color-dark;
+    }
+    
+    &.btn-github {
+        background-color: $github-color-dark;
+    }
+    
+    &.btn-mail {
+        background-color: $mail-color-dark;
+    }
+    
+    &.btn-journal {
+        background-color: $yellow-color-dark;
+    }
+}
