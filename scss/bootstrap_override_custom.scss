@@ -54,65 +54,14 @@ $dribbble-color-dark: #D1447A;
     border: 0px solid transparent;
 }
 
-.navbar-default .navbar-nav > li > a {
-    
-    &.btn-facebook {
-        background-color: $facebook-color;
-        color: white;
-    }
-    
-    &.btn-twitter {
-        background-color: $twitter-color;
-        color: white;
-    }
-    
-    &.btn-linkedin {
-        background-color: $linkedin-color;
-        color: white;
-    }
-    
-    &.btn-github {
-        background-color: $github-color;
-        color: white;
-    }
-    
-    &.btn-mail {
-        background-color: $mail-color;
-        color: white;
-    }
-    
-    &.btn-journal {
-        background-color: $yellow-color;
-        color: white;
-    }
-    
+.btn:active,
+.btn.active {
+    // Remove shadow from the inside of btn objects.
+    -webkit-box-shadow: none;
+  	box-shadow: none;
 }
 
-.navbar-default .navbar-nav > li > a:hover, 
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > li > a:active{
-    
-    &.btn-facebook {
-        background-color: $facebook-color-dark;
-    }
-    
-    &.btn-twitter {
-        background-color: $twitter-color-dark;
-    }
-    
-    &.btn-linkedin {
-        background-color: $linkedin-color-dark;
-    }
-    
-    &.btn-github {
-        background-color: $github-color-dark;
-    }
-    
-    &.btn-mail {
-        background-color: $mail-color-dark;
-    }
-    
-    &.btn-journal {
-        background-color: $yellow-color-dark;
-    }
+// Default center everything withing container
+.container {
+    text-align: center;
 }

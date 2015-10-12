@@ -46,7 +46,6 @@ html {
 	font-family: $font-stack;
 	color: $gray-color;
 	font-weight: 100;
-	//text-transform: uppercase;
 }
 
 body {
@@ -59,6 +58,10 @@ body {
     overflow-x: hidden;
 }
 
+html, body {
+	max-width: 100%;
+}
+
 nav {
     
     // Special size constraint for a smaller logo.
@@ -67,27 +70,86 @@ nav {
 	   }
 }
 
-html, body {
-	max-width: 100%;
+.navbar-default .navbar-nav > li > a {
+    
+    &.btn-facebook {
+        background-color: $facebook-color;
+        color: white;
+    }
+    
+    &.btn-twitter {
+        background-color: $twitter-color;
+        color: white;
+    }
+    
+    &.btn-linkedin {
+        background-color: $linkedin-color;
+        color: white;
+    }
+    
+    &.btn-github {
+        background-color: $github-color;
+        color: white;
+    }
+    
+    &.btn-mail {
+        background-color: $mail-color;
+        color: white;
+    }
+    
+    &.btn-journal {
+        background-color: $yellow-color;
+        color: white;
+    }
+    
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active{
+    
+    &.btn-facebook {
+        background-color: $facebook-color-dark;
+    }
+    
+    &.btn-twitter {
+        background-color: $twitter-color-dark;
+    }
+    
+    &.btn-linkedin {
+        background-color: $linkedin-color-dark;
+    }
+    
+    &.btn-github {
+        background-color: $github-color-dark;
+    }
+    
+    &.btn-mail {
+        background-color: $mail-color-dark;
+    }
+    
+    &.btn-journal {
+        background-color: $yellow-color-dark;
+    }
 }
 
 p {
-    font-size: 20px;
+    font-size: 14px;
 	
 	// Small Serif
 	.small{
-		font-size: 16px;
+		font-size: 12px;
 	}
 	
 	// Large Serif
 	.large{
-		font-size: 24px;
+		font-size: 18px;
 	}
 }
 
 // Heart icon
 .heart {
-        color:$red-color;
+    color:$red-color;
 }	
 
 .jump-btn {
@@ -96,30 +158,11 @@ p {
     font-size: 50px;
     font-weight:bold;
     
-    &.blue {
-
-        color: $blue-color-dark;
-    }
-    
-    &.green {
-        
-        color: $green-color-dark;
-    }
-    
-    &.red {
-
-        color: $red-color-dark;
-    }
-    
-    &.yellow {
-
-        color: $yellow-color-dark;
-    }
-    
-    &.gray {
-
-        color: $gray-color;
-    }
+    &.blue { color: $blue-color-dark; }
+    &.green { color: $green-color-dark; }
+    &.red { color: $red-color-dark; }
+    &.yellow { color: $yellow-color-dark; }
+    &.gray { color: $gray-color; }
     
     
     &.blue:hover, .blue:focus, .blue:active, .blue.active, .open > .dropdown-toggle.blue,{
@@ -140,6 +183,14 @@ p {
     
     &.gray:hover, .gray:focus, .gray:active, .gray.active, .open > .dropdown-toggle.gray,{
         color: red;
+    }
+    
+    &.background-light {
+        background-color: white;
+    }
+    
+    &.background-gray {
+        background-color: gray;
     }
     
 }
@@ -181,13 +232,19 @@ h1,h2,h3,h4,h5,h6{
 	font-family: $font-stack;
 }
 
+// Important text colors
+.red{ color: $red-color !important;}
+.green{ color: $green-color !important;}
+.blue{ color: $blue-color !important;}
+.yellow{ color: $yellow-color !important;}
+
 // Header
 header {
 	
-	background: white;
+    background: white;
     color: $gray-color;
-	font-family: $font-stack;
-	padding-top: 50px;
+    font-family: $font-stack;
+    padding-top: 50px;
 	
 	.container {
     	padding-top: 50px;
@@ -200,45 +257,18 @@ header {
     	margin: 0 auto 20px;
 	}
 	
-	// Special size constraint for a larger logo.
-	.img-large {
-    	min-height: 250px;
-    	min-width: 250px;
-	}
-	
 	.intro-text {
-		
-		h1,h2,h3,h4,h5,h6 {
+      
         font-family: $font-stack-code;
-        font-weight: 300;
-    		display: block;
-    		font-size: 40px;
-    		padding-bottom: 10%;
+        display: block;
+        padding-bottom: 10%;
     		padding-top: 10%;
-		}
 		
 		// Attributes of emphisized text in intro text.
 		span.name{
     		color: $red-color;
         font-weight: 100;
 		}
-      
-      // Attributes of emphisized text in intro text.
-    span.r{
-        color: $red-color;
-    }
-
-    span.g{
-        color: $green-color;
-    }
-
-    span.b{
-        color: $blue-color;
-    }
-
-    span.y{
-        color: $yellow-color;
-    }
 	}
 }
 
@@ -246,21 +276,12 @@ header {
 @media(max-width:767px) {
 	
     header {
-		.intro-text {
-			h1,h2,h3,h4,h5,h6 {
-        		padding-bottom: 50px;
-        		padding-top: 50px;
-				font-size: 30px;
-			}
-		}
+        .intro-text {
+                padding-bottom: 50px;
+                padding-top: 50px;
+                font-size: 30px;
+    		}
     }
-}
-
-// Remove shadow from the inside of btn objects.
-.btn:active,
-.btn.active {
-	-webkit-box-shadow: none;
-  	box-shadow: none;
 }
 
 section {
@@ -280,10 +301,6 @@ section {
 	&.quote {
 		background: $gray-color-light;
 		color: $gray-color;
-		
-		b{
-			color: $yellow-color;
-		}
 	}
     
   // Counter Section
@@ -301,19 +318,6 @@ section {
 		color: white;
 		
 		a{
-			color: white;
-		}
-		
-		a.btn-resume {
-			background: $blue-color-dark-dark;
-			color: white;
-		}
-		
-		a.btn-resume:hover,
-		a.btn-resume:focus,
-		a.btn-resume:active,
-		a.btn-resume.active {
-    		background-color: $blue-color-dark;
 			color: white;
 		}
 	}
@@ -370,32 +374,64 @@ footer {
     
 }
 
+/*
+ * ID's
+ */
 #quote{
     padding: 100px 0;
 }
-
 #counter {
     padding: 100px 0;
 }
-
 #about{
     padding: 100px 0;
 }
-
 #education{
     padding: 100px 0;
 }
-
 #interests{
     padding: 100px 0;
 }
-
 #skills{
     padding: 100px 0;
 }
-
 #contact{
     padding: 100px 0;
+}
+
+/*
+ * Media Queries
+ */
+
+// Above Small
+@media(min-width:480px) {
+	
+    section p, section a, .jumbotron p, .jumbotron a {
+        font-size: 40px;
+        font-weight: 200;
+        text-align: center;
+    }
+    
+    i{
+    
+        &.small {
+            font-size: 10vw;
+        }
+    }
+}
+
+// Below Medium
+@media(max-width:922px){
+	.narrow {
+		max-width: 90%;
+	}
+    
+    i{
+
+        &.small {
+            font-size: 7vw;
+        }
+    }
 }
 
 // Small
@@ -406,23 +442,13 @@ footer {
         font-weight: 200;
         text-align: center;
     }
-}
+    
+    i{
 
-// Above Small
-@media(min-width:480px) {
-	
-    section p, section a, .jumbotron p, .jumbotron a {
-        font-size: 40px;
-        font-weight: 200;
-        text-align: center;
+        &.small {
+            font-size: 10vw;
+        }
     }
-}
-
-// Below Medium
-@media(max-width:922px){
-	.narrow {
-		max-width: 90%;
-	}
 }
 
 // Above Medium
@@ -430,6 +456,13 @@ footer {
 	.narrow {
 		max-width: 60%
 	}
+    
+    i{
+    
+        &.small {
+            font-size: 5vw;
+        }
+    }
 }
 
 /*

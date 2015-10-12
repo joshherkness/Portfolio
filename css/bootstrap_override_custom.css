@@ -20,46 +20,10 @@
   opacity: 0.95;
   border: 0px solid transparent; }
 
-.navbar-default .navbar-nav > li > a.btn-facebook {
-  background-color: #3b5998;
-  color: white; }
-.navbar-default .navbar-nav > li > a.btn-twitter {
-  background-color: #4099ff;
-  color: white; }
-.navbar-default .navbar-nav > li > a.btn-linkedin {
-  background-color: #4875b4;
-  color: white; }
-.navbar-default .navbar-nav > li > a.btn-github {
-  background-color: #333333;
-  color: white; }
-.navbar-default .navbar-nav > li > a.btn-mail {
-  background-color: #2acd82;
-  color: white; }
-.navbar-default .navbar-nav > li > a.btn-journal {
-  background-color: #fbeb3a;
-  color: white; }
+.btn:active,
+.btn.active {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
 
-.navbar-default .navbar-nav > li > a:hover.btn-facebook,
-.navbar-default .navbar-nav > li > a:focus.btn-facebook,
-.navbar-default .navbar-nav > li > a:active.btn-facebook {
-  background-color: #203767; }
-.navbar-default .navbar-nav > li > a:hover.btn-twitter,
-.navbar-default .navbar-nav > li > a:focus.btn-twitter,
-.navbar-default .navbar-nav > li > a:active.btn-twitter {
-  background-color: #1f84f7; }
-.navbar-default .navbar-nav > li > a:hover.btn-linkedin,
-.navbar-default .navbar-nav > li > a:focus.btn-linkedin,
-.navbar-default .navbar-nav > li > a:active.btn-linkedin {
-  background-color: #3e659c; }
-.navbar-default .navbar-nav > li > a:hover.btn-github,
-.navbar-default .navbar-nav > li > a:focus.btn-github,
-.navbar-default .navbar-nav > li > a:active.btn-github {
-  background-color: #1a1a1a; }
-.navbar-default .navbar-nav > li > a:hover.btn-mail,
-.navbar-default .navbar-nav > li > a:focus.btn-mail,
-.navbar-default .navbar-nav > li > a:active.btn-mail {
-  background-color: #24b370; }
-.navbar-default .navbar-nav > li > a:hover.btn-journal,
-.navbar-default .navbar-nav > li > a:focus.btn-journal,
-.navbar-default .navbar-nav > li > a:active.btn-journal {
-  background-color: #e0d234; }
+.container {
+  text-align: center; }

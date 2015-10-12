@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,18 +32,12 @@
 
     <!-- Custom Fonts -->
     <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>-->
-    <!--<link href='http://fonts.googleapis.com/css?family=Economica:400,700,400italic,700italic' rel='stylesheet' type='text/css'>-->   
     <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 </head>
 
-<body id="page-top" class="index">
+    <body id="page-top" class="index">
     
     <!-- Navigation Bar -->
     <nav class="navbar navbar-default">
@@ -61,11 +55,12 @@
                     <img class="img-responsive logo" src="assets/logo_gray.svg" alt="" onmouseover="this.src='assets/logo.svg';" onmouseout="this.src='assets/logo_gray.svg';"> 
                 </a>
             </div>
+            
             <!-- Navbar Menu -->
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <!--<li><a class="btn btn-facebook fa fa-facebook" href="#"></a></li>
-                    <li><a class="btn btn-twitter fa fa-twitter" href="#"></a></li>-->
+                    <li><a class="btn btn-facebook fa fa-facebook" href="https://www.facebook.com/josh.herkness"></a></li>
+                    <li><a class="btn btn-twitter fa fa-twitter" href="https://twitter.com/joshherkness"></a></li>
                     <li><a class="btn btn-linkedin fa fa-linkedin" href="http://www.linkedin.com/in/joshherkness/"></a></li>
                     <li><a class="btn btn-github fa fa-github-alt" href="https://github.com/joshherkness"></a></li>
                     <li><a class="btn btn-mail fa fa-envelope" href="mailto:joshherkness@gmail.com"></a></li>
@@ -81,21 +76,38 @@
             <div class="row-fluid">
                 <div class="col-lg-12">
 					<!-- Image -->
-                    <img class="img-responsive img-large" src="assets/logo.svg" alt="">
-                    <div class="intro-text">
-                        <h1>
-                            <span class="b">Human </span>
-                            <span class="g">joshua </span>
-                            <span class="y">= </span>
-                            <span class="r">new </span>
-                            <span class="b">Human()</span>;
-                            <span class="blinking-cursor"> _</span>
-                        </h1>
-                    </div>
+                    <img class="img-responsive" src="assets/logo.svg" alt="">
+                    <h1 class="intro-text">
+                        <span class="blue">Human </span>
+                        <span class="green">joshua </span>
+                        <span class="yellow">= </span>
+                        <span class="red">new </span>
+                        <span class="blue">Human()</span>;
+                        <span class="blinking-cursor"> _</span>
+                    </h1>
                 </div>
             </div>
         </div>
     </header>
+        
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container narrow">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <i class="fa fa-info small"></i>
+                    <br><br><br><br>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>
+                          I’m a sophmore in Computer Science,
+						              a connoisseur of classical music,
+						              and a fan of science fiction.
+                    </p>
+				        </div>  
+            </div>
+        </div>
+    </section>
     
     <!-- Quote Section -->
     <section class="quote" id="quote">
@@ -103,20 +115,26 @@
             <div class="row">
                 <div class="col-lg-12">
                     <blockquote>
-                        <p>
-                            "Computer science is no more about computers than astronomy is about telescopes."
+                        <p> 
+                            <i class="fa fa-quote-left"></i>
+                            <i>Computer science is no more about computers than astronomy is about telescopes.</i>
+                            <i class="fa fa-quote-right"></i>
                         </p>
-                        <p>- <b>Edsger Dijkstra</b></p>
+                        <p class="yellow">- Edsger Dijkstra</p>
                     </blockquote>
                 </div>
             </div>
         </div>
     </section>
-    
+        
     <!-- Counter Section -->
     <section class="counter" id="counter">
         <div class="container narrow">
             <div class="row-fluid">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <i class="fa fa-clock-o small"></i>
+                    <br><br><br><br>
+                </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <p>
                           I've been programming for
@@ -124,35 +142,20 @@
                     <br><br>
 				        </div>
                 <div class= "col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
-                    <h1 class="years yellow"></h1><p class="years-lable small"></p>
+                    <h1 class="years"></h1><p class="years-lable small"></p>
                 </div>
                 <div class= "col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                    <h1 class="days yellow"></h1><p class="days-lable small"></p>
+                    <h1 class="days"></h1><p class="days-lable small"></p>
                 </div>
                 <div class= "col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                    <h1 class="hours yellow"></h1><p class="hours-lable small"></p>
+                    <h1 class="hours"></h1><p class="hours-lable small"></p>
                 </div>
                 <div class= "col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                    <h1 class="minutes yellow"></h1><p class="minutes-lable small"></p>
+                    <h1 class="minutes"></h1><p class="minutes-lable small"></p>
                 </div>
                 <div class= "col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                    <h1 class="seconds yellow"></h1><p class="seconds-lable small"></p>
+                    <h1 class="seconds"></h1><p class="seconds-lable small"></p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container narrow">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <p>
-                          I’m A sophmore in Computer Science,<br>
-						              A connoisseur of classical music,<br>
-						              and A fan of science fiction.
-                    </p>
-				        </div>               
             </div>
         </div>
     </section>
@@ -161,10 +164,14 @@
     <section class="education" id="education">
         <div class="container narrow">
             <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <i class="fa fa-institution small"></i>
+                    <br><br><br><br>
+                </div>
                 <div class="col-lg-12">
                     <p>
                         I’m currently an undergraduate Computer Science Student, 
-                        studying at <br><a href="http://www.oakland.edu">Oakland University <i class="fa fa-institution"></i> </a>.
+                        studying at <br><a href="http://www.oakland.edu">Oakland University</a>.
                     </p>
                 </div>
             </div>
@@ -180,10 +187,14 @@
     <section class="interests" id="interests">
         <div class="container narrow">
             <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <i class="fa fa-rocket small"></i>
+                    <br><br><br><br>
+                </div>
                 <div class="col-lg-12">
                     <p>
                         My primary interests lay in
-						mobile and web development,<br>
+				    mobile and web development,<br>
 						with an emphasis on UX-UI design.
                     </p>
                 </div>
@@ -200,10 +211,56 @@
     <section class="skills" id="skills">
         <div class="container narrow">
             <div class="row">
-                <div class="col-lg-12">
-                    <p>
-                        Some of my mad skills include Swift, Objective-C, Java, C, HTML, UNIX, and CSS.
-                    </p>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-swift small yellow"></i>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-java small red"></i>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="fa fa-html5 small green"></i>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-css3 small blue"></i>
+                </div>
+                <br><br><br><br><br><br><br>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-terminal small"></i>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-python small"></i>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-javascript small"></i>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-git small"></i>
+                </div>
+                <br><br><br><br><br><br><br>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-github small"></i>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-markdown small"></i>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-bootstrap small"></i>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-apple small"></i>
+                </div>
+                <br><br><br><br><br><br><br>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-visualstudio small"></i>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-eclipse small"></i>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-brackets small"></i>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <i class="devicons devicons-netbeans small"></i>
                 </div>
             </div>
         </div>
@@ -240,25 +297,16 @@
 
 </body>
     
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-<!-- Plugin JavaScript -->
-<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
-<!--<script src="js/classie.js"></script>-->
-<!--<script src="js/cbpAnimatedHeader.js"></script>-->
+    <!-- Waypoints Javascript -->
+    <script src="js/bower_components/waypoints/lib/jquery.waypoints.js"></script>
 
-<!-- Contact Form JavaScript -->
-<!--<script src="js/jqBootstrapValidation.js"></script>-->
-<!--<script src="js/contact_me.js"></script>-->
-
-<!-- Waypoints Javascript -->
-<script src="js/bower_components/waypoints/lib/jquery.waypoints.js"></script>
-
-<!-- Custom JavaScript -->
-<script src="js/script.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
 
 </html>
