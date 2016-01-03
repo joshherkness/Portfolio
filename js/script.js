@@ -1,8 +1,8 @@
 // Counter
 function startCounter(startDate) {
-    
+
     setInterval(function () {
-        
+
         // Gets the current date
         var currentDate = new Date();
 
@@ -34,52 +34,52 @@ function startCounter(startDate) {
 
         // The rest of timeDiff is number of years
         var years = timeDiff;
-                
+
         $(".years").text(years);
         $(".days").text(days);
         $(".hours").text(hours);
         $(".minutes").text(minutes);
         $(".seconds").text(seconds);
-        
+
         if (years != 1) {
             $(".years-lable").text("years");
         } else {
             $(".years-lable").text("year");
         }
-        
+
         if (days != 1) {
             $(".days-lable").text("days");
         } else {
             $(".days-lable").text("day");
         }
-        
+
         if (hours != 1) {
             $(".hours-lable").text("hours");
         } else {
             $(".hours-lable").text("hour");
         }
-        
+
         if (minutes != 1) {
             $(".minutes-lable").text("minutes");
         } else {
             $(".minutes-lable").text("minute");
         }
-        
+
         if (seconds != 1) {
             $(".seconds-lable").text("seconds");
         } else {
             $(".seconds-lable").text("second");
         }
-        
+
     }, 1000);
 }
 
 window.onload = function () {
-    
+
     // Begin counter
     var startDate = new Date("September 8, 2012 12:00:00");
     setTimeout(startCounter(startDate), 1000);
-    
+
     /*
      * Objects to be used as waypoints
      * to-do: Figure out how to use an array
@@ -90,7 +90,7 @@ window.onload = function () {
     var education = $('.education');
     var interests = $('.interests');
     var skills = $('.skills');
-    
+
     /*
      * Hide waypoints
      */
@@ -100,7 +100,7 @@ window.onload = function () {
     education.animate({opacity: 0}, 0);
     interests.animate({opacity: 0}, 0);
     skills.animate({opacity: 0}, 0);
-    
+
     /*
      * Create waypoint functions
      */

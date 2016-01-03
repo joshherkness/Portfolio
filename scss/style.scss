@@ -1,7 +1,7 @@
 /*
  * style.scss
  * joshherkness.github.io
- * 
+ *
  * Copyright 2015 Joshua Herkness
  */
 
@@ -62,137 +62,126 @@ html, body {
 	max-width: 100%;
 }
 
-nav {
-    
-    // Special size constraint for a smaller logo.
-    .logo {
-        height:100%;
-	   }
+p {
+    font-size: 30px;
 }
 
 .navbar-default .navbar-nav > li > a {
-    
+
+	background-color: $gray-color-light;
+
+	i {
+		margin: auto 10px;
+	}
+
     &.btn-facebook {
-        background-color: $facebook-color;
-        color: white;
+        color: $facebook-color;
     }
-    
+
     &.btn-twitter {
-        background-color: $twitter-color;
-        color: white;
+        color: $twitter-color;
     }
-    
+
     &.btn-linkedin {
-        background-color: $linkedin-color;
-        color: white;
+        color: $linkedin-color;
     }
-    
+
     &.btn-github {
-        background-color: $github-color;
-        color: white;
+        color: $github-color;
     }
-    
+
     &.btn-mail {
-        background-color: $mail-color;
-        color: white;
+        color: $mail-color;
     }
-    
+
     &.btn-journal {
-        background-color: $yellow-color;
-        color: white;
+        color: $yellow-color;
     }
-    
+
 }
 
-.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:active{
-    
-    &.btn-facebook {
-        background-color: $facebook-color-dark;
-    }
-    
-    &.btn-twitter {
-        background-color: $twitter-color-dark;
-    }
-    
-    &.btn-linkedin {
-        background-color: $linkedin-color-dark;
-    }
-    
-    &.btn-github {
-        background-color: $github-color-dark;
-    }
-    
-    &.btn-mail {
-        background-color: $mail-color-dark;
-    }
-    
-    &.btn-journal {
-        background-color: $yellow-color-dark;
-    }
-}
 
-p {
-    font-size: 14px;
-	
-	// Small Serif
-	.small{
-		font-size: 12px;
-	}
-	
-	// Large Serif
-	.large{
-		font-size: 18px;
-	}
+	color: white;
+
+    &.btn-facebook {
+        background-color: $facebook-color;
+    }
+
+    &.btn-twitter {
+        background-color: $twitter-color;
+    }
+
+    &.btn-linkedin {
+        background-color: $linkedin-color;
+    }
+
+    &.btn-github {
+        background-color: $github-color;
+    }
+
+    &.btn-mail {
+        background-color: $mail-color;
+    }
+
+    &.btn-journal {
+        background-color: $yellow-color;
+    }
 }
 
 // Heart icon
 .heart {
     color:$red-color;
-}	
+}
+
+// Code icon
+.code {
+    color:$yellow-color;
+}
 
 .jump-btn {
-    
+
     text-align: center;
     font-size: 50px;
     font-weight:bold;
-    
+
     &.blue { color: $blue-color-dark; }
     &.green { color: $green-color-dark; }
     &.red { color: $red-color-dark; }
     &.yellow { color: $yellow-color-dark; }
     &.gray { color: $gray-color; }
-    
-    
+
+
     &.blue:hover, .blue:focus, .blue:active, .blue.active, .open > .dropdown-toggle.blue,{
         color: $blue-color-dark;
     }
-    
+
     &.green:hover, .green:focus, .green:active, .green.active, .open > .dropdown-toggle.green,{
         color: $green-color-dark;
     }
-    
+
     &.red:hover, .red:focus, .red:active, .red.active, .open > .dropdown-toggle.red,{
         color: $red-color-dark;
     }
-    
+
     &.yellow:hover, .yellow:focus, .yellow:active, .yellow.active, .open > .dropdown-toggle.yellow,{
         color: $yellow-color-dark;
     }
-    
+
     &.gray:hover, .gray:focus, .gray:active, .gray.active, .open > .dropdown-toggle.gray,{
         color: red;
     }
-    
+
     &.background-light {
         background-color: white;
     }
-    
+
     &.background-gray {
         background-color: gray;
     }
-    
+
 }
 
 .years,
@@ -200,13 +189,13 @@ p {
 .hours,
 .minutes,
 .seconds{
-    
+
     font-family: $font-stack-code;
     border-radius: 5px;
     background-color: white;
     color:$red-color;
     padding: 20px 10px;
-    
+
     background: -moz-linear-gradient(top,  white 50%, $gray-color-light 50%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,white), color-stop(50%,$gray-color-light)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top,  white 50%,$gray-color-light 50%); /* Chrome10+,Safari5.1+ */
@@ -226,7 +215,7 @@ p {
 
 // All headers
 h1,h2,h3,h4,h5,h6{
-	
+
 	// ALign all headers in the center
 	text-align: center;
 	font-family: $font-stack;
@@ -240,30 +229,30 @@ h1,h2,h3,h4,h5,h6{
 
 // Header
 header {
-	
+
     background: white;
     color: $gray-color;
     font-family: $font-stack;
     padding-top: 50px;
-	
+
 	.container {
     	padding-top: 50px;
     	padding-bottom: 50px;
 	}
-	
+
 	// Center logo
 	img {
     	display: block;
     	margin: 0 auto 20px;
 	}
-	
+
 	.intro-text {
-      
+
         font-family: $font-stack-code;
         display: block;
         padding-bottom: 10%;
     		padding-top: 10%;
-		
+
 		// Attributes of emphisized text in intro text.
 		span.name{
     		color: $red-color;
@@ -274,7 +263,7 @@ header {
 
 // When screen width is less than 767px
 @media(max-width:767px) {
-	
+
     header {
         .intro-text {
                 padding-bottom: 50px;
@@ -285,78 +274,78 @@ header {
 }
 
 section {
-	
+
 	// Remove underlines from links.
 	a:hover:not(.btn){
 		text-decoration: none;
 	}
-	
+
 	// Change the button attributes for all sections
 	a.btn {
 		font-size: 30px;
 		width: 100%;
 	}
-    
+
   // Quote Section
 	&.quote {
 		background: $gray-color-light;
 		color: $gray-color;
 	}
-    
+
   // Counter Section
 	&.counter {
-      
+
 		background: $red-color;
 		color: white;
 
 	}
-	
+
 	// About section
 	&.about {
-		
+
 		background: $blue-color;
 		color: white;
-		
+
 		a{
 			color: white;
 		}
 	}
-	
+
 	// Education Section
 	&.education {
 		background: white;
 		color: $gray-color;
-		
+
 		a{
 			color: $yellow-color;
 		}
 	}
-	
+
 	// Interests Section
 	&.interests {
 		background: $green-color;
 		color: white;
-		
+
 		a{
 			color: white;
 		}
 	}
-	
+
 	// Skills Section
 	&.skills {
 		background: white;
 		color: $gray-color;
-		
+
 		a{
 			color: $green-color;
 		}
 	}
-	
+
 	// Contact Section
 	&.contact {
 		background: $gray-color-light;
 		color: $gray-color;
-		
+
 		a{
 			color: $green-color;
 		}
@@ -365,13 +354,13 @@ section {
 
 // Footer
 footer {
-	
+
 	background: $gray-color-light;
 	color: $gray-color;
 	font-size: 10px;
 	text-align: center;
 	padding: 100px 0;
-    
+
 }
 
 /*
@@ -405,15 +394,15 @@ footer {
 
 // Above Small
 @media(min-width:480px) {
-	
+
     section p, section a, .jumbotron p, .jumbotron a {
-        font-size: 40px;
+        //font-size: 40px;
         font-weight: 200;
         text-align: center;
     }
-    
+
     i{
-    
+
         &.small {
             font-size: 10vw;
         }
@@ -425,7 +414,7 @@ footer {
 	.narrow {
 		max-width: 90%;
 	}
-    
+
     i{
 
         &.small {
@@ -436,13 +425,13 @@ footer {
 
 // Small
 @media(max-width:480px) {
-	
+
     section p, section a, .jumbotron p, .jumbotron a {
         font-size: 30px;
         font-weight: 200;
         text-align: center;
     }
-    
+
     i{
 
         &.small {
@@ -456,9 +445,9 @@ footer {
 	.narrow {
 		max-width: 60%
 	}
-    
+
     i{
-    
+
         &.small {
             font-size: 5vw;
         }

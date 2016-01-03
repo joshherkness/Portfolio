@@ -1,7 +1,7 @@
 /*
  * style.scss
  * joshherkness.github.io
- * 
+ *
  * Copyright 2015 Joshua Herkness
  */
 html {
@@ -24,62 +24,60 @@ body {
 html, body {
   max-width: 100%; }
 
-nav .logo {
-  height: 100%; }
-
-.navbar-default .navbar-nav > li > a.btn-facebook {
-  background-color: #3b5998;
-  color: white; }
-.navbar-default .navbar-nav > li > a.btn-twitter {
-  background-color: #4099ff;
-  color: white; }
-.navbar-default .navbar-nav > li > a.btn-linkedin {
-  background-color: #4875b4;
-  color: white; }
-.navbar-default .navbar-nav > li > a.btn-github {
-  background-color: #333333;
-  color: white; }
-.navbar-default .navbar-nav > li > a.btn-mail {
-  background-color: #2acd82;
-  color: white; }
-.navbar-default .navbar-nav > li > a.btn-journal {
-  background-color: #fbeb3a;
-  color: white; }
-
-.navbar-default .navbar-nav > li > a:hover.btn-facebook,
-.navbar-default .navbar-nav > li > a:focus.btn-facebook,
-.navbar-default .navbar-nav > li > a:active.btn-facebook {
-  background-color: #203767; }
-.navbar-default .navbar-nav > li > a:hover.btn-twitter,
-.navbar-default .navbar-nav > li > a:focus.btn-twitter,
-.navbar-default .navbar-nav > li > a:active.btn-twitter {
-  background-color: #1f84f7; }
-.navbar-default .navbar-nav > li > a:hover.btn-linkedin,
-.navbar-default .navbar-nav > li > a:focus.btn-linkedin,
-.navbar-default .navbar-nav > li > a:active.btn-linkedin {
-  background-color: #3e659c; }
-.navbar-default .navbar-nav > li > a:hover.btn-github,
-.navbar-default .navbar-nav > li > a:focus.btn-github,
-.navbar-default .navbar-nav > li > a:active.btn-github {
-  background-color: #1a1a1a; }
-.navbar-default .navbar-nav > li > a:hover.btn-mail,
-.navbar-default .navbar-nav > li > a:focus.btn-mail,
-.navbar-default .navbar-nav > li > a:active.btn-mail {
-  background-color: #24b370; }
-.navbar-default .navbar-nav > li > a:hover.btn-journal,
-.navbar-default .navbar-nav > li > a:focus.btn-journal,
-.navbar-default .navbar-nav > li > a:active.btn-journal {
-  background-color: #e0d234; }
-
 p {
-  font-size: 14px; }
-  p .small {
-    font-size: 12px; }
-  p .large {
-    font-size: 18px; }
+  font-size: 30px; }
+
+.navbar-default .navbar-nav > li > a {
+  background-color: #fafafa; }
+  .navbar-default .navbar-nav > li > a i {
+    margin: auto 10px; }
+  .navbar-default .navbar-nav > li > a.btn-facebook {
+    color: #3b5998; }
+  .navbar-default .navbar-nav > li > a.btn-twitter {
+    color: #4099ff; }
+  .navbar-default .navbar-nav > li > a.btn-linkedin {
+    color: #4875b4; }
+  .navbar-default .navbar-nav > li > a.btn-github {
+    color: #333333; }
+  .navbar-default .navbar-nav > li > a.btn-mail {
+    color: #2acd82; }
+  .navbar-default .navbar-nav > li > a.btn-journal {
+    color: #fbeb3a; }
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active {
+  color: white; }
+  .navbar-default .navbar-nav > li > a:hover.btn-facebook,
+  .navbar-default .navbar-nav > li > a:focus.btn-facebook,
+  .navbar-default .navbar-nav > li > a:active.btn-facebook {
+    background-color: #3b5998; }
+  .navbar-default .navbar-nav > li > a:hover.btn-twitter,
+  .navbar-default .navbar-nav > li > a:focus.btn-twitter,
+  .navbar-default .navbar-nav > li > a:active.btn-twitter {
+    background-color: #4099ff; }
+  .navbar-default .navbar-nav > li > a:hover.btn-linkedin,
+  .navbar-default .navbar-nav > li > a:focus.btn-linkedin,
+  .navbar-default .navbar-nav > li > a:active.btn-linkedin {
+    background-color: #4875b4; }
+  .navbar-default .navbar-nav > li > a:hover.btn-github,
+  .navbar-default .navbar-nav > li > a:focus.btn-github,
+  .navbar-default .navbar-nav > li > a:active.btn-github {
+    background-color: #333333; }
+  .navbar-default .navbar-nav > li > a:hover.btn-mail,
+  .navbar-default .navbar-nav > li > a:focus.btn-mail,
+  .navbar-default .navbar-nav > li > a:active.btn-mail {
+    background-color: #2acd82; }
+  .navbar-default .navbar-nav > li > a:hover.btn-journal,
+  .navbar-default .navbar-nav > li > a:focus.btn-journal,
+  .navbar-default .navbar-nav > li > a:active.btn-journal {
+    background-color: #fbeb3a; }
 
 .heart {
   color: #ee1356; }
+
+.code {
+  color: #fbeb3a; }
 
 .jump-btn {
   text-align: center;
@@ -256,7 +254,6 @@ footer {
  */
 @media (min-width: 480px) {
   section p, section a, .jumbotron p, .jumbotron a {
-    font-size: 40px;
     font-weight: 200;
     text-align: center; }
 

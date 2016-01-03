@@ -1,7 +1,7 @@
 /*
  * bootstrap_override_custom.scss
  * joshherkness.github.io
- * 
+ *
  * Copyright 2015 Joshua Herkness
  */
 .navbar-brand {
@@ -16,7 +16,7 @@
 
 .navbar {
   min-height: 100px !important;
-  background-color: #fafafa;
+  background-color: white;
   opacity: 0.95;
   border: 0px solid transparent; }
 
