@@ -1,0 +1,20 @@
+// Project.scss
+
+.projects {
+    background-color: white;
+
+    a:link, a:visited > .project {
+        color: $dark-gray;
+    }
+
+    a:hover, a:active > .project {
+        color: $green;
+        text-decoration: none;
+    }
+
+    .project {
+        padding: 30px;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,21 @@
+<%# projects.erb %>
+
+<div class="section projects" id="projects">
+    <div class="container-fluid">
+        <div class="grid" id="grid">
+            <div class="grid-sizer  col-lg-3 col-md-6 col-sm-6 col-xs-12"></div>
+            <% data.projects.each do |project| %>
+            <div class="grid-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <% link_to project['website'] do %>
+                    <div class="project">
+                        <h1><%= lorem.words 2 %></h1>
+                        <%#<%=project['name']%>
+                        <p><%= lorem.paragraph %></p>
+                        <%#<%=project['name']%>
+                    </div>
+                <% end %>
+            </div>
+            <% end %>
+        </div>
+    </div>
+</div>
