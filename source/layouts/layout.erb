@@ -11,13 +11,10 @@
     <title><%= current_page.data.title || "Middleman" %></title>
 
     <!-- JQuery -->
-    <%= javascript_include_tag :jquery %>
-
-    <!-- Latest compiled and minified CSS for Bootstrap-->
-    <%= stylesheet_link_tag :bootstrap %>
+    <%= javascript_include_tag :'vendor/jquery' %>
 
     <!-- Bootstrap Core JavaScript -->
-    <%= javascript_include_tag :bootstrap %>
+    <%= javascript_include_tag :'vendor/bootstrap' %>
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
@@ -26,8 +23,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js"></script>
 
-    <%= stylesheet_link_tag :base %>
-    <%= javascript_include_tag :all %>
+    <%= stylesheet_link_tag :main %>
+    <%= javascript_include_tag :main %>
   </head>
 
   <body class="<%= page_classes %>">

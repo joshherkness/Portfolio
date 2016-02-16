@@ -3,7 +3,6 @@
 ###
 
 # Per-page layout changes:
-#
 # With no layout
 page '/*.xml', layout: false
 page '/*.json', layout: false
@@ -17,6 +16,8 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # General configuration
+
+require 'bootstrap-sass'
 
 # Sctivate syntax highlighting
 activate :syntax, :line_numbers => true
