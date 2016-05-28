@@ -17,9 +17,7 @@ page '/*.txt', layout: false
 
 # General configuration
 
-require 'bootstrap-sass'
-
-# Sctivate syntax highlighting
+# Activate syntax highlighting
 activate :syntax, :line_numbers => true
 
 # Reload the browser automatically whenever files change

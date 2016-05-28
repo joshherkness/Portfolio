@@ -16,6 +16,3 @@ gem 'middleman-compass', '>= 4.0.0'
 # Syntax
 gem 'redcarpet'
 gem 'middleman-syntax'
-
-# Bootstrap
-gem 'bootstrap-sass', '~> 3.3.3'
