@@ -1,0 +1,49 @@
+// Header.scss
+.header {
+
+    font-family: 'DINPro';
+    font-weight: normal;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    .vcard {
+
+        display: block;
+
+        flex: 1 1 50%;
+        align-items: center;
+
+        .vcard_profile {
+            img {
+                border-radius: 50%;
+                width: 155px;
+            }
+        }
+        .vcard_detail {
+            .vcard_title {
+                font-size: 3rem;
+                color: #220E2A;
+                font-weight: 500;
+
+                margin-top: 0;
+            }
+            .vcard_tag {
+                font-weight: normal;
+                color: #3B475B;
+            }
+            .vcard_link > a {
+                font-weight: normal;
+                color: #F2EB59;
+                &:hover, &:active {
+                    text-decoration: underline;
+                }
+                &:link, &:visited {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

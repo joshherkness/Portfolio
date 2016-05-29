@@ -2,10 +2,21 @@
  * main.css.scss
  */
 
+@import "compass/css3";
+
+// Fonts
+@include font-face("DINPro", font-files("DINPro-Regular/DINPro-Regular.woff", "woff", "DINPro-Regular/DINPro-Regular.ttf", "ttf", "DINPro-Regular/DINPro-Regular.svg", "svg"), "DINPro-Regular/DINPro-Regular.eot", normal);
+
+@include font-face("DINPro", font-files("DINPro-Medium/DINPro-Medium.woff", "woff", "DINPro-Medium/DINPro-Medium.ttf", "ttf", "DINPro-Medium/DINPro-Medium.svg", "svg"), "DINPro-Medium/DINPro-Medium.eot", 500);
+
+@include font-face("DINPro", font-files("DINPro-Bold/DINPro-Bold.woff", "woff", "DINPro-Bold/DINPro-Bold.ttf", "ttf", "DINPro-Bold/DINPro-Bold.svg", "svg"), "DINPro-Bold/DINPro-Bold.eot", bold);
+
 // Modules
+@import "modules/typography";
 @import "modules/colors";
 @import "modules/syntax-theme";
 @import "modules/code";
 
 // Partials
 @import "partials/projects";
+@import "partials/header"
