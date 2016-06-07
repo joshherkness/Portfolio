@@ -1,48 +1,104 @@
 // Header.scss
 .header {
-
-    font-family: 'DINPro';
-    font-weight: normal;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-
-    .vcard {
-
-        display: block;
-
-        flex: 1 1 50%;
+    font-family: 'DINPro' normal;
+    .header-wrapper {
+        height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .hero-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
         align-items: center;
-
-        .vcard_profile {
-            img {
-                border-radius: 50%;
-                width: 155px;
+        flex: 1 1 auto;
+    }
+    .vcard-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 auto;
+        @include md {
+            flex-flow: row nowrap;
+            align-items: stretch;
+        }
+    }
+    .vcard_profile {
+        flex: 0 0 auto;
+        overflow: hidden;
+        border-radius: 50%;
+        width: 155px;
+        height: 155px;
+        background-size: cover;
+        border: 10px solid $snow;
+        background-image: url('/images/profile-min.jpg');
+        &:hover {
+            background-image: url('/images/profile_cool-min.jpg');
+        }
+    }
+    .vcard_detail {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        flex: 0 0 auto;
+        @include md {
+            margin-left: 40px;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+        .detail_name,
+        .detail_tag,
+        .detail_link {
+            font-weight: normal;
+            margin: 0.5rem 0;
+            @include md {
+                margin: 0;
             }
         }
-        .vcard_detail {
-            .vcard_title {
-                font-size: 3rem;
-                color: #220E2A;
-                font-weight: 500;
-
-                margin-top: 0;
+        .detail_name {
+            font-weight: 500;
+            color: $blackcurrant;
+        }
+        .detail_tag {
+            color: $oxford-blue;
+        }
+        .detail_link,
+        a {
+            color: $portica;
+            &:hover,
+            &:active {
+                text-decoration: underline;
             }
-            .vcard_tag {
-                font-weight: normal;
-                color: #3B475B;
+            &:link,
+            &:visited {
+                text-decoration: none;
             }
-            .vcard_link > a {
-                font-weight: normal;
-                color: #F2EB59;
-                &:hover, &:active {
-                    text-decoration: underline;
-                }
-                &:link, &:visited {
-                    text-decoration: none;
-                }
+        }
+    }
+    .footer-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 1rem;
+        .footer_tag,
+        a {
+            flex: 0 0 auto;
+            color: $blackcurrant;
+            background-color: #FAFAFA;
+            padding: 10px;
+            font-weight: normal;
+            margin: 0 0.5rem;
+            &:hover,
+            &:active {
+                text-decoration: underline;
+                //background-color: darken(#FAFAFA, 1%);
+                background-color: $blackcurrant;
+                color: white;
+            }
+            &:link,
+            &:visited {
+                text-decoration: none;
             }
         }
     }
