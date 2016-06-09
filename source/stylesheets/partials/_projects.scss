@@ -1,22 +1,63 @@
 // Project.scss
-
 .projects {
-    //background-color: white;
-    // font-family: "DINPro";
-    // font-weight: normal;
-
-    a:link, a:visited > .project {
-        //color: $dark-gray;
-    }
-
-    a:hover, a:active > .project {
-        //color: $green;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'DINPro' normal;
+    .project-card {
+        flex: 0 0 100%;
+        margin: 20px;
+        background-color: $snow;
         text-decoration: none;
-    }
-
-    .project {
-        padding: 30px;
-        margin-bottom: 30px;
-        text-align: justify;
+        @include sm {
+            flex: 0 0 33%;
+        }
+        @include md {
+            flex: 0 0 25%;
+        }
+        @include lg {
+            flex: 0 0 20%;
+        }
+        &:link,
+        &:active,
+        &:visited {
+            color: inherit;
+            -webkit-transition: all 0.25s ease-out;
+            -moz-transition: all 0.25s ease-out;
+            -ms-transition: all 0.25s ease-out;
+            -o-transition: all 0.25s ease-out;
+            transition: all 0.25s ease-out;
+        }
+        &:hover {
+            box-shadow: 0 10px 40px #DDDDDD;
+        }
+        .project_image {
+            width: 100%;
+        }
+        .project_details {
+            padding: 20px;
+            .detail_name,
+            .detail_description {
+                color: $blackcurrant;
+                padding: 5px;
+            }
+            .detail_name {
+                font-weight: 500;
+            }
+            .detail_description {}
+            .detail_tags {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                .tag {
+                    flex: 0 0 auto;
+                    padding: 10px;
+                    margin: 5px;
+                    background-color: lighten($oxford-blue, 60%);
+                    border-radius: 2px;
+                }
+            }
+        }
     }
 }

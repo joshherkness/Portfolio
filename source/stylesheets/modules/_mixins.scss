@@ -26,9 +26,3 @@ $lg-width: 1200px;
     @content;
   }
 }
-
-@mixin lg {
-  @media only screen and (min-width: #{$lg-width}) {
-    @content;
-  }
-}
