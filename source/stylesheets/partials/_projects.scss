@@ -5,11 +5,14 @@
     justify-content: center;
     align-items: flex-start;
     font-family: 'DINPro' normal;
+    
     .project-card {
         flex: 0 0 100%;
         margin: 20px;
         background-color: $snow;
         text-decoration: none;
+        border-radius: 5px;
+        overflow: hidden;
         @include sm {
             flex: 0 0 33%;
         }
@@ -23,14 +26,14 @@
         &:active,
         &:visited {
             color: inherit;
-            -webkit-transition: all 0.25s ease-out;
-            -moz-transition: all 0.25s ease-out;
-            -ms-transition: all 0.25s ease-out;
-            -o-transition: all 0.25s ease-out;
-            transition: all 0.25s ease-out;
+            -webkit-transition: all 0.12s ease-out;
+            -moz-transition: all 0.12s ease-out;
+            -ms-transition: all 0.12s ease-out;
+            -o-transition: all 0.12s ease-out;
+            transition: all 0.12s ease-out;
         }
         &:hover {
-            box-shadow: 0 10px 40px #DDDDDD;
+            box-shadow: 0 10px 20px #DDDDDD;
         }
         .project_image {
             width: 100%;
