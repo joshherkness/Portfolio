@@ -31,7 +31,7 @@
         width: 200px;
         height: 200px;
         background-size: cover;
-        border: 10px solid $snow;
+        border: 10px solid $light-blue;
         background-image: url('/images/profile-min.jpg');
         &:hover {
             background-image: url('/images/profile_cool-min.jpg');
@@ -65,7 +65,7 @@
         }
         .detail_link,
         a {
-            color: $portica;
+            color: $purple;
             &:hover,
             &:active {
                 text-decoration: underline;
