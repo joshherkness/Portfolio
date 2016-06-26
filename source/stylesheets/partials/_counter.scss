@@ -16,6 +16,7 @@
         border-bottom: 5px solid $tolopea;
         font-style: italic;
         color: white;
+        max-width: 75%; // Fix for the width of the bottom border
     }
 }
 
@@ -49,12 +50,19 @@
             height: 60px;
             background-color: white;
             color: $tolopea;
-            font-family: 'DINPro', serif;
-            font-size: 40px;
+            font-size: 20px;
             font-weight: 500;
             border-radius: 10px;
             box-shadow: 0 0 60px transparentize($tolopea, 0.9);
             margin: 0 10px;
+
+            @include sm {
+                font-size: 30px;
+            }
+
+            @include md {
+                font-size: 30px;
+            }
 
             .digit-card {
 
@@ -93,10 +101,11 @@
         }
 
         .comma-card {
-            display: block;
-            width: 5px;
+            position: relative;
+            left: 0.15em;
+            display: inline-block;
             z-index: 100;
-            text-align: center;
+            text-align:right;
         }
     }
 }

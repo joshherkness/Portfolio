@@ -3,6 +3,7 @@
     font-family: 'DINPro' normal;
     .header-wrapper {
         height: 100vh;
+        margin-bottom:  100px;
         display: flex;
         flex-flow: column nowrap;
     }
@@ -19,6 +20,7 @@
         justify-content: center;
         align-items: center;
         flex: 0 0 auto;
+
         @include md {
             flex-flow: row nowrap;
             align-items: stretch;
@@ -31,7 +33,6 @@
         width: 200px;
         height: 200px;
         background-size: cover;
-        border: 8px solid #EFF3F7;
         background-image: url('/images/profile-min.jpg');
         &:hover {
             background-image: url('/images/profile_cool-min.jpg');

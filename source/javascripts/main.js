@@ -4,41 +4,16 @@
 
 //= require_tree .
 
-// Counter
-function startCounter(startDate) {
-
-    setInterval(function () {
-
-        // Gets the current date
-        var now = moment();
-        var end = moment(startDate);
-
-        var timeDifferenceSeconds = now.diff(end, 'seconds');
-        var timeDifferencePrecise = now.preciseDiff(end, true);
-
-        var seconds = ' ';
-        seconds = counterCardWithValue(timeDifferenceSeconds, 'Seconds', 2);
-
-        var broken = ' ';
-        broken += counterCardWithValue(timeDifferencePrecise.years, 'Years', 2);
-        broken += counterCardWithValue(timeDifferencePrecise.months, 'Months', 2);
-        broken += counterCardWithValue(timeDifferencePrecise.days, 'Days', 2);
-        broken += counterCardWithValue(timeDifferencePrecise.hours, 'Hours', 2);
-        broken += counterCardWithValue(timeDifferencePrecise.minutes, 'Minutes', 2);
-        broken += counterCardWithValue(timeDifferencePrecise.seconds, 'Seconds', 2);
-
-
-        $("#seconds").html(seconds);
-        $("#broken").html(broken);
-
-    }, 1000);
-}
-
 window.onload = function () {
 
-    // Begin counter
+    // Start date for counter ( The date that I began programming )
     var startDate = new Date("September 30, 2012 12:00:00");
-    setTimeout(startCounter(startDate), 1000);
+
+    // Initially update the interface, then continuousely update every second.
+    updateCounter(startDate);
+    setInterval(function () {
+        updateCounter(startDate);
+    }, 1000);
 
     $('#seconds').show();
     $('#broken').hide();
@@ -54,6 +29,9 @@ window.onload = function () {
     });
 };
 
+/*
+ * DOM component creating function
+ */
 function counterCardWithValue(value, tag, minimumSize) {
     var card = '<div class="display-card">';
     var valueString = value.toString();
@@ -80,4 +58,29 @@ function counterCardWithValue(value, tag, minimumSize) {
     card += '</div>';
 
     return card;
+}
+
+function updateCounter(startDate) {
+
+    // Gets the current date
+    var now = moment();
+    var end = moment(startDate);
+
+    var timeDifferenceSeconds = now.diff(end, 'seconds');
+    var timeDifferencePrecise = now.preciseDiff(end, true);
+
+    var seconds = ' ';
+    seconds = counterCardWithValue(timeDifferenceSeconds, 'Seconds', 2);
+
+    var broken = ' ';
+    broken += counterCardWithValue(timeDifferencePrecise.years, 'Years', 2);
+    broken += counterCardWithValue(timeDifferencePrecise.months, 'Months', 2);
+    broken += counterCardWithValue(timeDifferencePrecise.days, 'Days', 2);
+    broken += counterCardWithValue(timeDifferencePrecise.hours, 'Hours', 2);
+    broken += counterCardWithValue(timeDifferencePrecise.minutes, 'Minutes', 2);
+    broken += counterCardWithValue(timeDifferencePrecise.seconds, 'Seconds', 2);
+
+
+    $("#seconds").html(seconds);
+    $("#broken").html(broken);
 }
