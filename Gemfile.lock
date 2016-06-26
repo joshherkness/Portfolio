@@ -144,7 +144,7 @@ PLATFORMS
 DEPENDENCIES
   middleman (>= 4.0.0)
   middleman-compass (>= 4.0.0)
-  middleman-deploy (~> 1.0)
+  middleman-deploy (>= 1.0)
   middleman-livereload
   middleman-syntax
   redcarpet
