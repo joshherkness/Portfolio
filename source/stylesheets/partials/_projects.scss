@@ -1,56 +1,83 @@
 // Project.scss
 .projects {
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    // Style
+    font-family: 'DINPro', serif;
+
+    .projects-title {
+        flex: 0 0 auto;
+        text-align: center;
+        padding-bottom: 5px;
+        border-bottom: 5px solid $bananna-yellow;
+        font-style: italic;
+        color: $tolopea;
+    }
+}
+
+.projects-wrapper {
+
+    // Layout
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    font-family: 'DINPro' normal;
-    background-color: $bananna-yellow;
+
+    // Style
+    padding: 50px 0;
+
     .project-card {
+
+        // Layout
         flex: 0 0 100%;
+
+        // Style
+        background-color: white;
         margin: 20px;
-        background: white;
-        // background-color: $tolopea;
-        // background-image: -ms-linear-gradient(top left, $tolopea 0%, adjust-hue($tolopea, 320) 100%);
-        // background-image: -moz-linear-gradient(top left, $tolopea 0%,  adjust-hue($tolopea, 320)100%);
-        // background-image: -o-linear-gradient(top left, $tolopea 0%,  adjust-hue($tolopea, 320) 100%);
-        // background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, $tolopea), color-stop(100,  adjust-hue($tolopea, 320)));
-        // background-image: -webkit-linear-gradient(top left, $tolopea 0%,  adjust-hue($tolopea, 320) 100%);
-        // background-image: linear-gradient(to bottom right, $tolopea 0%,  adjust-hue($tolopea, 320) 100%);
+        border: 1px solid $aqua-haze;
         text-decoration: none;
-        border-radius: 10px;
         overflow: hidden;
+
         @include sm {
+            // Layout
             flex: 0 0 33%;
         }
+
         @include md {
+            // Layout
             flex: 0 0 25%;
+
+            // Style
+            border-radius: 10px;
+
+            &:link,
+            &:active,
+            &:visited {
+                -webkit-transition: all 0.20s ease-out;
+                -moz-transition: all 0.20s ease-out;
+                -ms-transition: all 0.20s ease-out;
+                -o-transition: all 0.20s ease-out;
+                transition: all 0.20s ease-out;
+            }
+
+            &:hover {
+                box-shadow: 0 0 60px transparentize($tolopea, 0.9);
+            }
         }
+
         @include lg {
+            // Layout
             flex: 0 0 25%;
-        }
-        &:link,
-        &:active,
-        &:visited {
-            color: inherit;
-            -webkit-transition: all 0.25s ease-out;
-            -moz-transition: all 0.25s ease-out;
-            -ms-transition: all 0.25s ease-out;
-            -o-transition: all 0.25s ease-out;
-            transition: all 0.25s ease-out;
-        }
-        &:hover {
-            box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
         }
         .project_image {
             width: 100%;
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-
         }
         .project_details {
             padding: 20px;
-            text-align: center;
             .detail_name,
             .detail_description {
                 color: $tolopea;
@@ -59,19 +86,22 @@
             .detail_name {
                 font-weight: 500;
             }
-            .detail_description {}
+            .detail_description {
+                text-align: justify;
+            }
             .detail_tags {
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: flex-start;
                 .tag {
                     flex: 0 0 auto;
-                    padding: 10px;
+                    padding: 10px 20px;
                     margin: 5px;
+                    font-size: 12px;
                     color: $bananna-yellow;
-                    background-color: $tolopea;
-                    border-radius: 3px;
-
+                    background-color: transparent;
+                    border-radius: 50px;
+                    border: 1px solid $bananna-yellow;
                 }
             }
         }

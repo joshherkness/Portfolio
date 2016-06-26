@@ -1,9 +1,9 @@
 #data/projects.yml
 
 - name: Portfolio
-  image: /images/portfolio_a.png
+  image: http://orig13.deviantart.net/f41b/f/2014/233/3/4/abandoned_iron_giant_at_lake_in_swiss_mountains_by_fantasio-d7w3oeg.jpg
   website: http://joshherkness.com
-  description: This is a portfolio webssite which was created to showcase some of the projects i'm currently working on, and tell the world a little about myself.  In fact, you're looking  at it right now...
+  description: A portfolio website created to showcase some of the many projects that have and are being worked on.
   tags:
       - HTML
       - SCSS

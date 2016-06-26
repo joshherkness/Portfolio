@@ -31,10 +31,11 @@
         width: 200px;
         height: 200px;
         background-size: cover;
-        border: 10px solid $light-blue;
+        border: 8px solid #EFF3F7;
         background-image: url('/images/profile-min.jpg');
         &:hover {
             background-image: url('/images/profile_cool-min.jpg');
+            cursor:pointer;
         }
     }
     .vcard_detail {
@@ -58,14 +59,14 @@
         }
         .detail_name {
             font-weight: 500;
-            color: $blackcurrant;
+            color: $tolopea;
         }
         .detail_tag {
             color: $oxford-blue;
         }
         .detail_link,
         a {
-            color: $purple;
+            color: $bananna-yellow;
             &:hover,
             &:active {
                 text-decoration: underline;
@@ -84,17 +85,17 @@
         .footer_tag,
         a {
             flex: 0 0 auto;
-            color: $blackcurrant;
-            background-color: #FAFAFA;
-            padding: 10px;
+            color: $tolopea;
+            background-color: white;
+            padding: 10px 20px;
             font-weight: normal;
             margin: 0 0.5rem;
+            border: 1px solid $aqua-haze;
+            border-radius: 50px;
             &:hover,
             &:active {
-                text-decoration: underline;
-                //background-color: darken(#FAFAFA, 1%);
-                background-color: $blackcurrant;
-                color: white;
+                background-color: $aqua-haze;
+                box-shadow: 0 0 60px transparentize($tolopea, 0.9);
             }
             &:link,
             &:visited {
