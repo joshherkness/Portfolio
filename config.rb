@@ -49,6 +49,4 @@ activate :deploy do |deploy|
   deploy.build_before = true # runs build before deploying
   deploy.deploy_method = :git
   deploy.branch = 'gh-pages'
-  # deploy.remote   = 'git@github.com:joshherkness/joshherkness.github.io.git'
-  # deploy.strategy = :force_push      # commit strategy: can be :force_push or :submodule, default: :force_push
 end
