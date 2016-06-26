@@ -1,0 +1,44 @@
+#data/projects.yml
+
+- name: Portfolio
+  image: http://orig13.deviantart.net/f41b/f/2014/233/3/4/abandoned_iron_giant_at_lake_in_swiss_mountains_by_fantasio-d7w3oeg.jpg
+  website: http://joshherkness.com
+  description: A portfolio website created to showcase some of the many projects that have and are being worked on.
+  tags:
+      - HTML
+      - SCSS
+      - CSS
+      - Javascript
+      - Middleman
+- name: Ramsay
+  image: http://www.caffevita.com/blog/wp-content/uploads/2013/05/20111025-ChefRamsay.002-1024x658.jpeg
+  website: http://devpost.com/software/ramsay
+  description: Amazon Alexa skill created at Spartahack 2016.
+  tags:
+      - Javascript
+      - Node.js
+      - Amazon Alexa
+      - Amazon Echo
+      - AWS
+      - Spoontastic API
+- name: The Programmers Notebook
+  image: /images/b.png
+  website: http://the-programmers-notebook.herokuapp.com
+  description: Web based note taking application targeted toward computer scientists. Converts between markdown and rich text.
+  tags:
+      - Javascript
+      - Meteor.js
+      - MongoDB
+      - HTML
+      - SCSS
+      - CSS
+      - Ace editor
+      - CKEditor
+- name: Studr
+  image:
+  website: https://github.com/joshherkness/Studr
+  description: Initially conceived at MHAcks 2015.
+  tags:
+      - Swift
+      - Objective-C
+      - Firebase
