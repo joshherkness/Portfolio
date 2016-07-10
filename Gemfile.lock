@@ -87,10 +87,8 @@ GEM
       sass (>= 3.4)
       tilt (~> 1.4.1)
       uglifier (~> 2.6)
-    middleman-deploy (2.0.0.pre.alpha)
-      middleman-core (>= 3.2)
-      net-sftp
-      ptools
+    middleman-gh-pages (0.3.1)
+      rake (> 0.9.3)
     middleman-livereload (3.4.5)
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
@@ -104,9 +102,6 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     multi_json (1.11.2)
-    net-sftp (2.1.2)
-      net-ssh (>= 2.6.5)
-    net-ssh (3.2.0)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     padrino-helpers (0.13.0)
@@ -115,12 +110,12 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.13.0)
       activesupport (>= 3.1)
-    ptools (1.3.3)
     rack (1.6.4)
     rack-livereload (0.3.16)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (11.2.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -144,7 +139,7 @@ PLATFORMS
 DEPENDENCIES
   middleman (>= 4.0.0)
   middleman-compass (>= 4.0.0)
-  middleman-deploy (= 2.0.0.pre.alpha)
+  middleman-gh-pages
   middleman-livereload
   middleman-syntax
   redcarpet
