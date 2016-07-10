@@ -17,5 +17,5 @@ The following should **only** be used by a project collaborator.
 
 1. Clone the repository onto your machine.
 2. Open your terminal and navigate to the projects root directory.
-3. Run `$ bundle exec middleman deploy`.
-4. The `middleman-deploy` gem will build the project, and push the build file to the `gh-pages` branch on origin.  For more information on `middleman-deploy` visit [this](https://github.com/middleman-contrib/middleman-deploy) link.
+3. Run `$ bundle exec rake publish`.
+4. The `middleman-gh-pages` gem will build the project, and push the build file to the `gh-pages` branch on origin.  For more information on `middleman-gh-pages` visit [this](https://github.com/edgecase/middleman-gh-pages) link.
