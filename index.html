@@ -1,0 +1,180 @@
+<!-- layout.erb -->
+
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Welcome</title>
+
+    <!-- JQuery -->
+    <script src="/javascripts/vendor/jquery.js"></script>
+
+    <!-- Moment.js -->
+    <script src="/javascripts/vendor/moment.js"></script>
+    <script src="/javascripts/vendor/moment-precise-range.js"></script>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+    <!-- Flexbox grid -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js"></script>
+
+    <link href="/stylesheets/main.css" rel="stylesheet" />
+    <script src="/javascripts/main.js"></script>
+  </head>
+
+  <body class="index">
+    <div>
+    <!--<div class="section projects" id="projects">
+    <h1 class="projects-title">Projects</h1>
+    <div class="projects-wrapper">
+<a class="project-card" href="http://joshherkness.com">                    <img class="project_image" src="http://orig13.deviantart.net/f41b/f/2014/233/3/4/abandoned_iron_giant_at_lake_in_swiss_mountains_by_fantasio-d7w3oeg.jpg" />
+                <div class="project_details">
+                    <h2 class="detail_name">Portfolio</h2>
+                    <p class="detail_description"> A portfolio website created to showcase some of the many projects that have and are being worked on.</p>
+                    <div class="detail_tags">
+                            <p class="tag">HTML</p>
+                            <p class="tag">SCSS</p>
+                            <p class="tag">CSS</p>
+                            <p class="tag">Javascript</p>
+                            <p class="tag">Middleman</p>
+                    </div>
+                </div>
+</a><a class="project-card" href="http://devpost.com/software/ramsay">                    <img class="project_image" src="http://www.caffevita.com/blog/wp-content/uploads/2013/05/20111025-ChefRamsay.002-1024x658.jpeg" />
+                <div class="project_details">
+                    <h2 class="detail_name">Ramsay</h2>
+                    <p class="detail_description"> Amazon Alexa skill created at Spartahack 2016.</p>
+                    <div class="detail_tags">
+                            <p class="tag">Javascript</p>
+                            <p class="tag">Node.js</p>
+                            <p class="tag">Amazon Alexa</p>
+                            <p class="tag">Amazon Echo</p>
+                            <p class="tag">AWS</p>
+                            <p class="tag">Spoontastic API</p>
+                    </div>
+                </div>
+</a><a class="project-card" href="http://the-programmers-notebook.herokuapp.com">                    <img class="project_image" src="/images/b.png" />
+                <div class="project_details">
+                    <h2 class="detail_name">The Programmers Notebook</h2>
+                    <p class="detail_description"> Web based note taking application targeted toward computer scientists. Converts between markdown and rich text.</p>
+                    <div class="detail_tags">
+                            <p class="tag">Javascript</p>
+                            <p class="tag">Meteor.js</p>
+                            <p class="tag">MongoDB</p>
+                            <p class="tag">HTML</p>
+                            <p class="tag">SCSS</p>
+                            <p class="tag">CSS</p>
+                            <p class="tag">Ace editor</p>
+                            <p class="tag">CKEditor</p>
+                    </div>
+                </div>
+</a><a class="project-card" href="https://github.com/joshherkness/Studr">                <div class="project_details">
+                    <h2 class="detail_name">Studr</h2>
+                    <p class="detail_description"> Initially conceived at MHAcks 2015.</p>
+                    <div class="detail_tags">
+                            <p class="tag">Swift</p>
+                            <p class="tag">Objective-C</p>
+                            <p class="tag">Firebase</p>
+                    </div>
+                </div>
+</a>    </div>
+</div>
+-->
+    <div class="header">
+    <div class="header-wrapper">
+        <div class="hero-wrapper">
+            <div class="vcard-wrapper">
+                <div class="vcard_profile">
+
+                </div>
+                <div class="vcard_detail">
+                    <h1 class="detail_name">Joshua Herkness</h1>
+                    <h2 class="detail_tag">Software Developer</h2>
+                    <h2 class="detail_link"><a href="http://www.joshherkness.com">@joshherkness</a></h2>
+                    <h2 class="detail_link"><a href="http://www.joshherkness.com">joshherkness@gmail.com</a></h2>
+                </div>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <a class="footer_tag" href="https://github.com/joshherkness">github</a>
+            <a class="footer_tag" href="http://devpost.com/joshherkness?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">devpost</a>
+            <a class="footer_tag" href="http://www.joshherkness.com">linkedin</a>
+        </div>
+    </div>
+</div>
+
+    <div class="section counter">
+    <h1 class="counter-title">I've been programming for...</h1>
+    <div class="counter-wrapper" id="seconds">
+
+    </div>
+    <div class="counter-wrapper" id="broken">
+        
+    </div>
+</div>
+
+    <div class="section projects" id="projects">
+    <h1 class="projects-title">Projects</h1>
+    <div class="projects-wrapper">
+<a class="project-card" href="http://joshherkness.com">                    <img class="project_image" src="http://orig13.deviantart.net/f41b/f/2014/233/3/4/abandoned_iron_giant_at_lake_in_swiss_mountains_by_fantasio-d7w3oeg.jpg" />
+                <div class="project_details">
+                    <h2 class="detail_name">Portfolio</h2>
+                    <p class="detail_description"> A portfolio website created to showcase some of the many projects that have and are being worked on.</p>
+                    <div class="detail_tags">
+                            <p class="tag">HTML</p>
+                            <p class="tag">SCSS</p>
+                            <p class="tag">CSS</p>
+                            <p class="tag">Javascript</p>
+                            <p class="tag">Middleman</p>
+                    </div>
+                </div>
+</a><a class="project-card" href="http://devpost.com/software/ramsay">                    <img class="project_image" src="http://www.caffevita.com/blog/wp-content/uploads/2013/05/20111025-ChefRamsay.002-1024x658.jpeg" />
+                <div class="project_details">
+                    <h2 class="detail_name">Ramsay</h2>
+                    <p class="detail_description"> Amazon Alexa skill created at Spartahack 2016.</p>
+                    <div class="detail_tags">
+                            <p class="tag">Javascript</p>
+                            <p class="tag">Node.js</p>
+                            <p class="tag">Amazon Alexa</p>
+                            <p class="tag">Amazon Echo</p>
+                            <p class="tag">AWS</p>
+                            <p class="tag">Spoontastic API</p>
+                    </div>
+                </div>
+</a><a class="project-card" href="http://the-programmers-notebook.herokuapp.com">                    <img class="project_image" src="/images/b.png" />
+                <div class="project_details">
+                    <h2 class="detail_name">The Programmers Notebook</h2>
+                    <p class="detail_description"> Web based note taking application targeted toward computer scientists. Converts between markdown and rich text.</p>
+                    <div class="detail_tags">
+                            <p class="tag">Javascript</p>
+                            <p class="tag">Meteor.js</p>
+                            <p class="tag">MongoDB</p>
+                            <p class="tag">HTML</p>
+                            <p class="tag">SCSS</p>
+                            <p class="tag">CSS</p>
+                            <p class="tag">Ace editor</p>
+                            <p class="tag">CKEditor</p>
+                    </div>
+                </div>
+</a><a class="project-card" href="https://github.com/joshherkness/Studr">                <div class="project_details">
+                    <h2 class="detail_name">Studr</h2>
+                    <p class="detail_description"> Initially conceived at MHAcks 2015.</p>
+                    <div class="detail_tags">
+                            <p class="tag">Swift</p>
+                            <p class="tag">Objective-C</p>
+                            <p class="tag">Firebase</p>
+                    </div>
+                </div>
+</a>    </div>
+</div>
+
+</div>
+
+  </body>
+</html>
