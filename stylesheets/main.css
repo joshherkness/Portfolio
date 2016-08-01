@@ -400,7 +400,7 @@ body {
   .projects-wrapper .project-card {
     flex: 0 0 100%;
     background-color: white;
-    margin: 20px;
+    margin: 10px;
     border: 1px solid #EFF3F7;
     text-decoration: none;
     overflow: hidden; }
@@ -411,7 +411,7 @@ body {
     @media only screen and (min-width: 992px) {
       /* line 33, partials/_projects.scss */
       .projects-wrapper .project-card {
-        flex: 0 0 25%;
+        flex: 0 0 33%;
         border-radius: 10px; }
         /* line 57, partials/_projects.scss */
         .projects-wrapper .project-card:link, .projects-wrapper .project-card:active, .projects-wrapper .project-card:visited {
@@ -426,13 +426,13 @@ body {
     @media only screen and (min-width: 1200px) {
       /* line 33, partials/_projects.scss */
       .projects-wrapper .project-card {
-        flex: 0 0 20%; } }
+        flex: 0 0 25%; } }
     /* line 76, partials/_projects.scss */
     .projects-wrapper .project-card .project_image {
       width: 100%; }
     /* line 79, partials/_projects.scss */
     .projects-wrapper .project-card .project_details {
-      padding: 20px; }
+      padding: 0 20px 20px 20px; }
       /* line 81, partials/_projects.scss */
       .projects-wrapper .project-card .project_details .detail_name,
       .projects-wrapper .project-card .project_details .detail_description {
@@ -443,7 +443,7 @@ body {
         font-weight: 500; }
       /* line 89, partials/_projects.scss */
       .projects-wrapper .project-card .project_details .detail_description {
-        text-align: justify; }
+        text-align: left; }
       /* line 92, partials/_projects.scss */
       .projects-wrapper .project-card .project_details .detail_tags {
         display: flex;
@@ -452,9 +452,9 @@ body {
         /* line 96, partials/_projects.scss */
         .projects-wrapper .project-card .project_details .detail_tags .tag {
           flex: 0 0 auto;
-          padding: 10px 20px;
+          padding: 10px 15px;
           margin: 5px;
-          font-size: 12px;
+          font-size: 11px;
           font-weight: 500;
           color: #2D2540;
           background-color: rgba(254, 219, 55, 0.7);
