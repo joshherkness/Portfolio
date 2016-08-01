@@ -12,6 +12,7 @@
 @include font-face("DINPro", font-files("DINPro-Bold/DINPro-Bold.woff", "woff", "DINPro-Bold/DINPro-Bold.ttf", "ttf", "DINPro-Bold/DINPro-Bold.svg", "svg"), "DINPro-Bold/DINPro-Bold.eot", bold);
 
 // Modules
+@import "modules/base.scss";
 @import "modules/typography";
 @import "modules/colors";
 @import "modules/syntax-theme";
