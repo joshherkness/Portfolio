@@ -37,7 +37,7 @@
 
         // Style
         background-color: white;
-        margin: 20px;
+        margin: 10px;
         border: 1px solid $aqua-haze;
         text-decoration: none;
         overflow: hidden;
@@ -49,7 +49,7 @@
 
         @include md {
             // Layout
-            flex: 0 0 25%;
+            flex: 0 0 33%;
 
             // Style
             border-radius: 10px;
@@ -71,13 +71,13 @@
 
         @include lg {
             // Layout
-            flex: 0 0 20%;
+            flex: 0 0 25%;
         }
         .project_image {
             width: 100%;
         }
         .project_details {
-            padding: 20px;
+            padding: 0 20px 20px 20px;
             .detail_name,
             .detail_description {
                 color: $tolopea;
@@ -87,7 +87,7 @@
                 font-weight: 500;
             }
             .detail_description {
-                text-align: justify;
+                text-align: left;
             }
             .detail_tags {
                 display: flex;
@@ -95,9 +95,9 @@
                 justify-content: flex-start;
                 .tag {
                     flex: 0 0 auto;
-                    padding: 10px 20px;
+                    padding: 10px 15px;
                     margin: 5px;
-                    font-size: 12px;
+                    font-size: 11px;
                     font-weight: 500;
                     color: $tolopea;
                     background-color: rgba($bananna-yellow, 0.7);

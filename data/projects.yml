@@ -1,44 +1,52 @@
 #data/projects.yml
 
-- name: Portfolio
-  image: http://orig13.deviantart.net/f41b/f/2014/233/3/4/abandoned_iron_giant_at_lake_in_swiss_mountains_by_fantasio-d7w3oeg.jpg
-  website: http://joshherkness.com
-  description: A portfolio website created to showcase some of the many projects that have and are being worked on.
+- name: Invert
+  image: invert.jpeg
+  website: #
+  description: Mobile application for iOS.  Currently in development and working toward submitting to the app store.
   tags:
+      - Swift
+      - SpriteKit
+      - Xcode
+- name: Portfolio
+  image: portfolio.png
+  website: http://joshherkness.com
+  description: A static portfolio website to serve as my landing page on the internet.  Currently being hosted on github pages.
+  tags:
+      - Javascript
       - HTML
       - SCSS
-      - CSS
-      - Javascript
       - Middleman
 - name: Ramsay
-  image: http://www.caffevita.com/blog/wp-content/uploads/2013/05/20111025-ChefRamsay.002-1024x658.jpeg
+  image: ramsay.png
   website: http://devpost.com/software/ramsay
-  description: Amazon Alexa skill created at Spartahack 2016.
+  description: Voice activated kitchen assistant skill for Amazon Alexa.  Designed and created at Spartahack 2016.
   tags:
       - Javascript
       - Node.js
       - Amazon Alexa
-      - Amazon Echo
+      - Amazon Echo Hardware
       - AWS
-      - Spoontastic API
+      - Spoontacular REST API
 - name: The Programmers Notebook
-  image: /images/b.png
+  image: the-programmers-notebook.jpeg
   website: http://the-programmers-notebook.herokuapp.com
-  description: Web based note taking application targeted toward computer scientists. Converts between markdown and rich text.
+  description: Web based markdown & rich text notebook targeted towards programmers.  Designed to convert between markdown and html.
   tags:
       - Javascript
-      - Meteor.js
+      - Meteor
       - MongoDB
       - HTML
       - SCSS
-      - CSS
       - Ace editor
       - CKEditor
+      - Heroku
 - name: Studr
-  image:
+  image: studr.jpg
   website: https://github.com/joshherkness/Studr
-  description: Initially conceived at MHAcks 2015.
+  description: Mobile application for iOS designed to ease the burden of creating study sessions.  Designed at MHacks VI.
   tags:
       - Swift
       - Objective-C
       - Firebase
+      - Xcode
