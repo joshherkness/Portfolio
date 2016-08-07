@@ -74,6 +74,7 @@ p {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   max-width: 75%;
+  text-align: center;
 
   @at-root #{&}--yellow {
     color: $bananna-yellow;
