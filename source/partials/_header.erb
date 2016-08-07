@@ -1,22 +1,18 @@
+<%# header.erb %>
 <div class="header">
-    <div class="header-wrapper">
-        <div class="hero-wrapper">
-            <div class="vcard-wrapper">
-                <div class="vcard_profile">
-
-                </div>
-                <div class="vcard_detail">
-                    <h1 class="detail_name">Joshua Herkness</h1>
-                    <h2 class="detail_tag">Software Developer</h2>
-                    <h2 class="detail_link"><a href="http://www.joshherkness.com">@joshherkness</a></h2>
-                    <h2 class="detail_link"><a href="http://www.joshherkness.com">joshherkness@gmail.com</a></h2>
-                </div>
-            </div>
-        </div>
-        <div class="footer-wrapper">
-            <a class="footer_tag" href="https://github.com/joshherkness">github</a>
-            <a class="footer_tag" href="http://devpost.com/joshherkness?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">devpost</a>
-            <a class="footer_tag" href="http://www.joshherkness.com">linkedin</a>
-        </div>
+    <div class="top-wrapper">
+        <div class="profile"></div>
+        <h1 class="name">Joshua Herkness.</h1>
+    </div>
+    <div class="hero-wrapper">
+        <h2>Sorry for the mess</h2>
+        <p>I'm currently renovating right now, so it may be a bit dusty around here.</p>
+    </div>
+    <div class="bottom-wrapper">
+        <% data.social.each do |social| %>
+        <% link_to social['link'], :class => 'btn btn--light' do %>
+        <%= social['name'] %>
+        <% end %>
+        <% end %>
     </div>
 </div>

@@ -18,15 +18,30 @@ window.onload = function () {
     $('#seconds').show();
     $('#broken').hide();
 
-    $('.counter-wrapper').mouseenter(function() {
-        $('#seconds').hide();
-        $('#broken').show();
+    $('#textbox1').val($(this).is(':checked'));
+
+    $('#format-checkbox').change(function() {
+        if($(this).is(":checked")) {
+            $(this).attr("checked", "false");
+            $('#seconds').hide();
+            $('#broken').show();
+        } else {
+            $('#seconds').show();
+            $('#broken').hide();
+        }
+        $('#format-checkbox').val($(this).is(':checked'));
     });
 
-    $('.counter-wrapper').mouseleave(function() {
-        $('#seconds').show();
-        $('#broken').hide();
-    });
+    //
+    // $('.counter-wrapper').mouseenter(function() {
+    //     $('#seconds').hide();
+    //     $('#broken').show();
+    // });
+    //
+    // $('.counter-wrapper').mouseleave(function() {
+    //     $('#seconds').show();
+    //     $('#broken').hide();
+    // });
 };
 
 /*
@@ -53,7 +68,7 @@ function counterCardWithValue(value, tag, minimumSize) {
     }
     card += '</div>';
 
-    card += '<div class="display-tag">' + tag + '</div>' ;
+    card += '<div class="tag tag--white-opaque">' + tag + '</div>' ;
 
     card += '</div>';
 

@@ -1,24 +1,3 @@
-.counter {
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-
-    // Style
-    font-family: 'DINPro', serif;
-    background: $bananna-yellow;
-
-    .counter-title {
-        flex: 0 0 auto;
-        text-align: center;
-        padding-bottom: 5px;
-        border-bottom: 5px solid $tolopea;
-        font-style: italic;
-        color: white;
-        max-width: 75%; // Fix for the width of the bottom border
-    }
-}
 
 .counter-wrapper {
 
@@ -45,8 +24,6 @@
             justify-content: center;
             align-items: center;
 
-            flex: 0 0 auto;
-
             height: 60px;
             background-color: white;
             color: $tolopea;
@@ -54,7 +31,7 @@
             font-weight: 500;
             border-radius: 10px;
             box-shadow: 0 0 60px transparentize($tolopea, 0.9);
-            margin: 0 10px;
+            margin: 10px;
 
             @include sm {
                 font-size: 30px;
@@ -82,22 +59,6 @@
                     flex: 0 0 auto;
                 }
             }
-        }
-
-        .display-tag {
-
-            flex: 0 0 auto;
-
-            padding: 10px 20px;
-            margin: 20px 0;
-            color: $tolopea;
-            background-color: rgba(white, 0.25);
-            box-shadow: 0 0 60px transparentize($tolopea, 0.9);
-            font-family: 'DINPro', serif;
-            font-weight: 500;
-            font-size: 10px;
-            font-style: italic;
-            border-radius: 10px;
         }
 
         .comma-card {

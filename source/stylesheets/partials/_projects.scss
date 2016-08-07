@@ -1,109 +1,122 @@
-// Project.scss
-.projects {
+// _projects.scss
 
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+.project-card-collection {
 
-    // Style
-    font-family: 'DINPro', serif;
-
-    .projects-title {
-        flex: 0 0 auto;
-        text-align: center;
-        padding-bottom: 5px;
-        border-bottom: 5px solid $bananna-yellow;
-        font-style: italic;
-        color: $tolopea;
-    }
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  background-color: $aqua-haze;
+  @include md {
+    background-color: transparent;
+  }
 }
 
-.projects-wrapper {
+.project-card {
 
-    // Layout
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+  flex: 0 0 100%;
+  margin: 30px;
 
-    // Style
-    padding: 50px 0;
+  @include md {
+    margin: 10px;
+  }
 
-    .project-card {
+  border: 1px solid $aqua-haze;
+  text-decoration: none; // Remove underline
+  background-color: white ;
 
-        // Layout
-        flex: 0 0 100%;
+  -webkit-transition: all 0.20s ease-out;
+  -moz-transition: all 0.20s ease-out;
+  -ms-transition: all 0.20s ease-out;
+  -o-transition: all 0.20s ease-out;
+  transition: all 0.20s ease-out;
 
-        // Style
-        background-color: white;
-        margin: 10px;
-        border: 1px solid $aqua-haze;
-        text-decoration: none;
-        overflow: hidden;
+  @include md {
+    flex: 0 0 33%;
 
-        @include sm {
-            // Layout
-            flex: 0 0 33%;
-        }
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 30px transparentize($tolopea, 0.95);
 
-        @include md {
-            // Layout
-            flex: 0 0 33%;
-
-            // Style
-            border-radius: 10px;
-
-            &:link,
-            &:active,
-            &:visited {
-                -webkit-transition: all 0.20s ease-out;
-                -moz-transition: all 0.20s ease-out;
-                -ms-transition: all 0.20s ease-out;
-                -o-transition: all 0.20s ease-out;
-                transition: all 0.20s ease-out;
-            }
-
-            &:hover {
-                box-shadow: 0 0 60px transparentize($tolopea, 0.9);
-            }
-        }
-
-        @include lg {
-            // Layout
-            flex: 0 0 25%;
-        }
-        .project_image {
-            width: 100%;
-        }
-        .project_details {
-            padding: 0 20px 20px 20px;
-            .detail_name,
-            .detail_description {
-                color: $tolopea;
-                padding: 5px;
-            }
-            .detail_name {
-                font-weight: 500;
-            }
-            .detail_description {
-                text-align: left;
-            }
-            .detail_tags {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: flex-start;
-                .tag {
-                    flex: 0 0 auto;
-                    padding: 10px 15px;
-                    margin: 5px;
-                    font-size: 11px;
-                    font-weight: 500;
-                    color: $tolopea;
-                    background-color: rgba($bananna-yellow, 0.7);
-                    border-radius: 10px;
-                }
-            }
-        }
+    &:hover {
+      box-shadow: 0 0 60px transparentize($tolopea, 0.9);
     }
+  }
+  @include lg {
+    flex: 0 0 25%;
+  }
+}
+
+.project-card__image-container {
+  position: relative;
+  width: 100%
+}
+
+.project-card__image {
+  width: 100%;
+}
+
+.project-card__tag-collection {
+  display: flex;
+  flex-flow: row wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  @include md {
+    opacity: 0;
+  }
+}
+
+.project-card:hover .project-card__tag-collection {
+  opacity: 1;
+  transition: all 0.30s cubic-bezier(0, 0, 0, 1.13);
+}
+
+.project-card__details {
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  text-align: center;
+
+  .title {
+    color: $tolopea;
+  }
+
+  .description {
+    color: $very-light-gray;
+    font-weight: 300;
+  }
+}
+
+.project-card__btn-collection {
+  margin-top: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  border-top: 1px solid $aqua-haze;
+}
+
+.project-card__btn {
+  flex: 1 0 auto;
+  text-align: center;
+  color: $tolopea;
+  padding: 15px 0;
+  text-decoration: none;
+  &:hover {
+    background-color: $aqua-haze;
+  }
+  &:not(:first-child) {
+    border-left: 1px solid $aqua-haze;
+  }
+}
+
+.project-card__btn--disabled {
+  color:$aqua-haze;
+  &:hover {
+    background-color: inherit;
+  }
 }
