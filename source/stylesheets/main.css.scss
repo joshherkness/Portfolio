@@ -14,9 +14,9 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
 
 // Modules
+@import "modules/mixins";
 @import "modules/colors";
 @import "modules/base";
-@import "modules/mixins";
 
 // Partials
 @import "partials/projects";

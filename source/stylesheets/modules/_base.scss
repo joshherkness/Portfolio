@@ -58,11 +58,14 @@ p {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-
-  @at-root #{&}__title {
-    padding-bottom: 5px;
-    border-bottom-width: 5px;
-    border-bottom-style: solid;
+  @at-root #{&}--yellow {
+    background-color: $bananna-yellow;
+  }
+  @at-root #{&}--light {
+    background-color: white;
+  }
+  @at-root #{&}--dark {
+    background-color: $tolopea;
   }
 }
 
@@ -70,6 +73,26 @@ p {
   padding-bottom: 5px;
   border-bottom-width: 5px;
   border-bottom-style: solid;
+  max-width: 75%;
+
+  @at-root #{&}--yellow {
+    color: $bananna-yellow;
+  }
+  @at-root #{&}--light {
+    color: white;
+  }
+  @at-root #{&}--dark {
+    color: $tolopea;
+  }
+  @at-root #{&}--underline-yellow {
+    border-bottom-color: $bananna-yellow;
+  }
+  @at-root #{&}--underline-light {
+    border-bottom-color: white;
+  }
+  @at-root #{&}--underline-dark {
+    border-bottom-color: $tolopea;
+  }
 }
 
 .btn {
@@ -91,17 +114,6 @@ p {
     background-color: $aqua-haze;
     box-shadow: 0 0 60px transparentize($tolopea, 0.9);
   }
-}
-
-.tag-collection {
-  display: flex;
-  flex-flow: row wrap;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin: 10px;
-  opacity: 0;
 }
 
 .tag {

@@ -1,70 +1,44 @@
-// Project.scss
-.projects {
-
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-
-  // Style
-  font-family: 'DINPro', serif;
-
-  .projects-title {
-    flex: 0 0 auto;
-    text-align: center;
-    padding-bottom: 5px;
-    border-bottom: 5px solid $bananna-yellow;
-    font-style: italic;
-    color: $tolopea;
-  }
-}
+// _projects.scss
 
 .project-card-collection {
-  // Layout
+
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
 
-  // Style
-  padding: 10px 0;
-  background-color: $aqua-haze;
-
+  @include xs {
+    background-color: $aqua-haze;
+  }
   @include md {
     background-color: white;
   }
 }
 
 .project-card {
-  // Layout
+
   flex: 0 0 100%;
   margin: 10px;
-  // Style
+
   border: 1px solid $aqua-haze;
   text-decoration: none; // Remove underline
   background-color: white ;
 
+  -webkit-transition: all 0.20s ease-out;
+  -moz-transition: all 0.20s ease-out;
+  -ms-transition: all 0.20s ease-out;
+  -o-transition: all 0.20s ease-out;
+  transition: all 0.20s ease-out;
+
   @include md {
     flex: 0 0 33%;
 
-    // Style
     border-radius: 10px;
-    overflow: hidden; // Hide corners of images
+    overflow: hidden;
     box-shadow: 0 0 30px transparentize($tolopea, 0.95);
-    &:active,
-    &:link,
-    &:visited {
-      -webkit-transition: all 0.20s ease-out;
-      -moz-transition: all 0.20s ease-out;
-      -ms-transition: all 0.20s ease-out;
-      -o-transition: all 0.20s ease-out;
-      transition: all 0.20s ease-out;
-    }
+
     &:hover {
       box-shadow: 0 0 60px transparentize($tolopea, 0.9);
-      .tag-collection {
-        opacity: 1.0;
-      }
     }
   }
   @include lg {
@@ -79,6 +53,23 @@
 
 .project-card__image {
   width: 100%;
+}
+
+.project-card__tag-collection {
+  display: flex;
+  flex-flow: row wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  @include md {
+    opacity: 0;
+  }
+}
+
+.project-card:hover .project-card__tag-collection {
+  opacity: 1;
+  transition: all 0.30s cubic-bezier(0, 0, 0, 1.13);
 }
 
 .project-card__details {

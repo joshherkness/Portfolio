@@ -1,19 +1,3 @@
-.counter {
-
-    // Style
-    font-family: 'DINPro', serif;
-    background: $bananna-yellow;
-
-    .counter-title {
-        flex: 0 0 auto;
-        text-align: center;
-        padding-bottom: 5px;
-        border-bottom: 5px solid $tolopea;
-        font-style: italic;
-        color: white;
-        max-width: 75%; // Fix for the width of the bottom border
-    }
-}
 
 .counter-wrapper {
 

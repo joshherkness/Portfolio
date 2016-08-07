@@ -1,3 +1,4 @@
+<%# header.erb %>
 <div class="header">
     <div class="top-wrapper">
         <div class="profile"></div>
@@ -9,9 +10,9 @@
     </div>
     <div class="bottom-wrapper">
         <% data.social.each do |social| %>
-            <% link_to social['link'], :class => 'btn btn--light' do %>
-                <%= social['name'] %>
-            <% end %>
+        <% link_to social['link'], :class => 'btn btn--light' do %>
+        <%= social['name'] %>
+        <% end %>
         <% end %>
     </div>
 </div>
