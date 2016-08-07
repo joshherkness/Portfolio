@@ -1,0 +1,70 @@
+[
+    {
+        "name": "Orbit",
+        "image": "invert.jpeg",
+        "description": "Mobile application for iOS.  Currently in development and working toward submitting to the app store.",
+        "tags": [
+            "Swift",
+            "SpriteKit",
+            "Xcode"
+        ]
+    },
+    {
+        "name": "Portfolio",
+        "image": "portfolio.png",
+        "description": "A static portfolio website to serve as my landing page on the internet.  Currently being hosted on github pages.",
+        "tags": [
+            "Javascript",
+            "HTML",
+            "SCSS",
+            "Middleman"
+        ],
+        "source": "https://github.com/joshherkness/Portfolio",
+        "demo": "http://joshherkness.com"
+    },
+    {
+        "name": "Ramsay",
+        "image": "ramsay.png",
+        "description": "Voice activated kitchen assistant skill for Amazon Alexa.  Designed and created at Spartahack 2016 in the span of 18 hours.",
+        "tags": [
+            "Javascript",
+            "Node.js",
+            "Amazon Alexa",
+            "Amazon Echo Hardware",
+            "AWS",
+            "Spoontacular REST API"
+        ],
+        "source": "https://github.com/joshherkness/Ramsay",
+        "demo": "https://www.youtube.com/watch?v=aGpUHKqCg4k"
+    },
+    {
+        "name": "The Programmers Notebook",
+        "image": "the-programmers-notebook.jpeg",
+        "description": "Web based markdown & rich text notebook targeted towards programmers.  Designed to convert between markdown and html.",
+        "tags": [
+            "Javascript",
+            "Meteor",
+            "MongoDB",
+            "HTML",
+            "SCSS",
+            "Ace editor",
+            "CKEditor",
+            "Heroku"
+        ],
+        "source": "https://github.com/joshherkness/The-Programmers-Notebook",
+        "demo": "http://the-programmers-notebook.herokuapp.com"
+    },
+    {
+        "name": "Studr",
+        "image": "studr.jpg",
+        "description": "Mobile application for iOS designed to ease the burden of creating study sessions.  Designed at MHacks VI in the span of 36 hours.",
+        "tags": [
+            "Swift",
+            "Objective-C",
+            "Firebase",
+            "Xcode"
+        ],
+        "source": "https://github.com/joshherkness/Studr",
+        "demo": "http://devpost.com/software/ramsay"
+    }
+]

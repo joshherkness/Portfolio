@@ -1,75 +1,57 @@
 // Header.scss
-
 .header {
-    .header-wrapper {
-        height: 100vh;
-        margin-bottom:  100px;
-        display: flex;
-        flex-flow: column nowrap;
+  // Layout
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  margin-bottom: 100px;
+  .top-wrapper {
+    // Layout
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 40px;
+    .profile {
+      // Layout
+      flex: 0 0 auto;
+      overflow: hidden;
+      border-radius: 50%;
+      width: 4em;
+      height: 4em;
+      background-size: cover;
+      background-image: url('/images/profile-min.jpg');
+      filter:saturate(120%);
+      &:hover {
+        background-image: url('/images/profile_cool-min.jpg');
+        filter:saturate(1000%) hue-rotate(275deg);
+        cursor: pointer;
+      }
     }
-
-    .top-wrapper {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: center;
+    .name {
+      // Layout
+      flex: 0 1 auto;
+      @mixin lg {
         flex: 0 0 auto;
-        padding: 40px;
-
-        .top-profile {
-            flex: 0 0 auto;
-            overflow: hidden;
-            border-radius: 50%;
-            width: 75px;
-            height: 75px;
-            background-size: cover;
-            background-image: url('/images/profile-min.jpg');
-            filter: saturate(120%);
-            &:hover {
-                background-image: url('/images/profile_cool-min.jpg');
-                filter: saturate(1000%) hue-rotate(275deg);
-                cursor:pointer;
-            }
-        }
-
-        .top-name {
-            flex: 0 1 auto;
-            @mixin lg { flex: 0 0 auto; }
-            margin: 0 30px;
-
-            border-bottom-color: $bananna-yellow;
-        }
+      }
+      margin: 0 30px;
+      // Style
+      color: $tolopea;
+      border-bottom-color: $bananna-yellow;
     }
-
-    .hero-wrapper {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        flex: 1 1 auto;
-    }
-
-    .bottom-wrapper {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        padding: 1rem;
-        a {
-            flex: 0 0 auto;
-            color: $tolopea;
-            background-color: white;
-            padding: 10px 20px;
-            font-weight: normal;
-            margin: 0 0.5rem;
-            border: 1px solid $aqua-haze;
-            border-radius: 50px;
-            &:hover, &:active {
-                background-color: $aqua-haze;
-                box-shadow: 0 0 60px transparentize($tolopea, 0.9);
-            }
-            &:link, &:visited {
-                text-decoration: none;
-            }
-        }
-    }
+  }
+  .hero-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    color: darken($aqua-haze, 4); // Temp
+  }
+  .bottom-wrapper {
+    // Layout
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
 }
