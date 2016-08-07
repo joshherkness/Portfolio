@@ -31,169 +31,256 @@
 
   <body class="index">
     <div>
-    <!--<div class="section projects" id="projects">
-    <h1 class="projects-title">Projects</h1>
-    <div class="projects-wrapper">
-<a class="project-card" href="#">                    <img class="project_image" src="/images/invert.jpeg" />
-                <div class="project_details">
-                    <h2 class="detail_name">Invert</h2>
-                    <p class="detail_description"> Mobile application for iOS.  Currently in development and working toward submitting to the app store.</p>
-                    <div class="detail_tags">
-                            <p class="tag">Swift</p>
-                            <p class="tag">SpriteKit</p>
-                            <p class="tag">Xcode</p>
-                    </div>
-                </div>
-</a><a class="project-card" href="http://joshherkness.com">                    <img class="project_image" src="/images/portfolio.png" />
-                <div class="project_details">
-                    <h2 class="detail_name">Portfolio</h2>
-                    <p class="detail_description"> A static portfolio website to serve as my landing page on the internet.  Currently being hosted on github pages.</p>
-                    <div class="detail_tags">
-                            <p class="tag">Javascript</p>
-                            <p class="tag">HTML</p>
-                            <p class="tag">SCSS</p>
-                            <p class="tag">Middleman</p>
-                    </div>
-                </div>
-</a><a class="project-card" href="http://devpost.com/software/ramsay">                    <img class="project_image" src="/images/ramsay.png" />
-                <div class="project_details">
-                    <h2 class="detail_name">Ramsay</h2>
-                    <p class="detail_description"> Voice activated kitchen assistant skill for Amazon Alexa.  Designed and created at Spartahack 2016.</p>
-                    <div class="detail_tags">
-                            <p class="tag">Javascript</p>
-                            <p class="tag">Node.js</p>
-                            <p class="tag">Amazon Alexa</p>
-                            <p class="tag">Amazon Echo Hardware</p>
-                            <p class="tag">AWS</p>
-                            <p class="tag">Spoontacular REST API</p>
-                    </div>
-                </div>
-</a><a class="project-card" href="http://the-programmers-notebook.herokuapp.com">                    <img class="project_image" src="/images/the-programmers-notebook.jpeg" />
-                <div class="project_details">
-                    <h2 class="detail_name">The Programmers Notebook</h2>
-                    <p class="detail_description"> Web based markdown & rich text notebook targeted towards programmers.  Designed to convert between markdown and html.</p>
-                    <div class="detail_tags">
-                            <p class="tag">Javascript</p>
-                            <p class="tag">Meteor</p>
-                            <p class="tag">MongoDB</p>
-                            <p class="tag">HTML</p>
-                            <p class="tag">SCSS</p>
-                            <p class="tag">Ace editor</p>
-                            <p class="tag">CKEditor</p>
-                            <p class="tag">Heroku</p>
-                    </div>
-                </div>
-</a><a class="project-card" href="https://github.com/joshherkness/Studr">                    <img class="project_image" src="/images/studr.jpg" />
-                <div class="project_details">
-                    <h2 class="detail_name">Studr</h2>
-                    <p class="detail_description"> Mobile application for iOS designed to ease the burden of creating study sessions.  Designed at MHacks VI.</p>
-                    <div class="detail_tags">
-                            <p class="tag">Swift</p>
-                            <p class="tag">Objective-C</p>
-                            <p class="tag">Firebase</p>
-                            <p class="tag">Xcode</p>
-                    </div>
-                </div>
-</a>    </div>
+    <!--
+<div class="section section--light" id="projects">
+  <h1 class="section__title section__title--dark section__title--underline-yellow">Projects</h1>
+  <div class="project-card-collection">
+      <div class="project-card">
+          <div class="project-card__image-container">
+              <img class="project-card__image" src="/images/invert.jpeg" />
+              <div class="project-card__tag-collection">
+                  <div class="tag tag--white">Swift</div>
+                  <div class="tag tag--white">SpriteKit</div>
+                  <div class="tag tag--white">Xcode</div>
+              </div>
+          </div>
+        <div class="project-card__details">
+          <h2 class="title">Orbit</h2>
+          <p class="description">
+            Mobile application for iOS.  Currently in development and working toward submitting to the app store.</p>
+        </div>
+        <div class="project-card__btn-collection">
+          <a  class="project-card__btn project-card__btn--disabled disabled">source</a>
+          <a  class="project-card__btn project-card__btn--disabled disabled">demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+          <div class="project-card__image-container">
+              <img class="project-card__image" src="/images/portfolio.png" />
+              <div class="project-card__tag-collection">
+                  <div class="tag tag--white">Javascript</div>
+                  <div class="tag tag--white">HTML</div>
+                  <div class="tag tag--white">SCSS</div>
+                  <div class="tag tag--white">Middleman</div>
+              </div>
+          </div>
+        <div class="project-card__details">
+          <h2 class="title">Portfolio</h2>
+          <p class="description">
+            A static portfolio website to serve as my landing page on the internet.  Currently being hosted on github pages.</p>
+        </div>
+        <div class="project-card__btn-collection">
+          <a href='https://github.com/joshherkness/Portfolio' class="project-card__btn ">source</a>
+          <a href='http://joshherkness.com' class="project-card__btn ">demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+          <div class="project-card__image-container">
+              <img class="project-card__image" src="/images/ramsay.png" />
+              <div class="project-card__tag-collection">
+                  <div class="tag tag--white">Javascript</div>
+                  <div class="tag tag--white">Node.js</div>
+                  <div class="tag tag--white">Amazon Alexa</div>
+                  <div class="tag tag--white">Amazon Echo Hardware</div>
+                  <div class="tag tag--white">AWS</div>
+                  <div class="tag tag--white">Spoontacular REST API</div>
+              </div>
+          </div>
+        <div class="project-card__details">
+          <h2 class="title">Ramsay</h2>
+          <p class="description">
+            Voice activated kitchen assistant skill for Amazon Alexa.  Designed and created at Spartahack 2016 in the span of 18 hours.</p>
+        </div>
+        <div class="project-card__btn-collection">
+          <a href='https://github.com/joshherkness/Ramsay' class="project-card__btn ">source</a>
+          <a href='https://www.youtube.com/watch?v=aGpUHKqCg4k' class="project-card__btn ">demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+          <div class="project-card__image-container">
+              <img class="project-card__image" src="/images/the-programmers-notebook.jpeg" />
+              <div class="project-card__tag-collection">
+                  <div class="tag tag--white">Javascript</div>
+                  <div class="tag tag--white">Meteor</div>
+                  <div class="tag tag--white">MongoDB</div>
+                  <div class="tag tag--white">HTML</div>
+                  <div class="tag tag--white">SCSS</div>
+                  <div class="tag tag--white">Ace editor</div>
+                  <div class="tag tag--white">CKEditor</div>
+                  <div class="tag tag--white">Heroku</div>
+              </div>
+          </div>
+        <div class="project-card__details">
+          <h2 class="title">The Programmers Notebook</h2>
+          <p class="description">
+            Web based markdown & rich text notebook targeted towards programmers.  Designed to convert between markdown and html.</p>
+        </div>
+        <div class="project-card__btn-collection">
+          <a href='https://github.com/joshherkness/The-Programmers-Notebook' class="project-card__btn ">source</a>
+          <a href='http://the-programmers-notebook.herokuapp.com' class="project-card__btn ">demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+          <div class="project-card__image-container">
+              <img class="project-card__image" src="/images/studr.jpg" />
+              <div class="project-card__tag-collection">
+                  <div class="tag tag--white">Swift</div>
+                  <div class="tag tag--white">Objective-C</div>
+                  <div class="tag tag--white">Firebase</div>
+                  <div class="tag tag--white">Xcode</div>
+              </div>
+          </div>
+        <div class="project-card__details">
+          <h2 class="title">Studr</h2>
+          <p class="description">
+            Mobile application for iOS designed to ease the burden of creating study sessions.  Designed at MHacks VI in the span of 36 hours.</p>
+        </div>
+        <div class="project-card__btn-collection">
+          <a href='https://github.com/joshherkness/Studr' class="project-card__btn ">source</a>
+          <a href='http://devpost.com/software/ramsay' class="project-card__btn ">demo</a>
+        </div>
+      </div>
+  </div>
 </div>
 -->
     <div class="header">
-    <div class="header-wrapper">
-        <div class="hero-wrapper">
-            <div class="vcard-wrapper">
-                <div class="vcard_profile">
-
-                </div>
-                <div class="vcard_detail">
-                    <h1 class="detail_name">Joshua Herkness</h1>
-                    <h2 class="detail_tag">Software Developer</h2>
-                    <h2 class="detail_link"><a href="http://www.joshherkness.com">@joshherkness</a></h2>
-                    <h2 class="detail_link"><a href="http://www.joshherkness.com">joshherkness@gmail.com</a></h2>
-                </div>
-            </div>
-        </div>
-        <div class="footer-wrapper">
-            <a class="footer_tag" href="https://github.com/joshherkness">github</a>
-            <a class="footer_tag" href="http://devpost.com/joshherkness?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">devpost</a>
-            <a class="footer_tag" href="http://www.joshherkness.com">linkedin</a>
-        </div>
+    <div class="top-wrapper">
+        <div class="profile"></div>
+        <h1 class="name">Joshua Herkness.</h1>
     </div>
-</div>
-
-    <div class="section counter">
-    <h1 class="counter-title">I've been programming for...</h1>
-    <div class="counter-wrapper" id="seconds">
-
+    <div class="hero-wrapper">
+        <h2>Sorry for the mess</h2>
+        <p>I'm currently renovating right now, so it may be a bit dusty around here.</p>
     </div>
-    <div class="counter-wrapper" id="broken">
-        
-    </div>
-</div>
-
-    <div class="section projects" id="projects">
-    <h1 class="projects-title">Projects</h1>
-    <div class="projects-wrapper">
-<a class="project-card" href="#">                    <img class="project_image" src="/images/invert.jpeg" />
-                <div class="project_details">
-                    <h2 class="detail_name">Invert</h2>
-                    <p class="detail_description"> Mobile application for iOS.  Currently in development and working toward submitting to the app store.</p>
-                    <div class="detail_tags">
-                            <p class="tag">Swift</p>
-                            <p class="tag">SpriteKit</p>
-                            <p class="tag">Xcode</p>
-                    </div>
-                </div>
-</a><a class="project-card" href="http://joshherkness.com">                    <img class="project_image" src="/images/portfolio.png" />
-                <div class="project_details">
-                    <h2 class="detail_name">Portfolio</h2>
-                    <p class="detail_description"> A static portfolio website to serve as my landing page on the internet.  Currently being hosted on github pages.</p>
-                    <div class="detail_tags">
-                            <p class="tag">Javascript</p>
-                            <p class="tag">HTML</p>
-                            <p class="tag">SCSS</p>
-                            <p class="tag">Middleman</p>
-                    </div>
-                </div>
-</a><a class="project-card" href="http://devpost.com/software/ramsay">                    <img class="project_image" src="/images/ramsay.png" />
-                <div class="project_details">
-                    <h2 class="detail_name">Ramsay</h2>
-                    <p class="detail_description"> Voice activated kitchen assistant skill for Amazon Alexa.  Designed and created at Spartahack 2016.</p>
-                    <div class="detail_tags">
-                            <p class="tag">Javascript</p>
-                            <p class="tag">Node.js</p>
-                            <p class="tag">Amazon Alexa</p>
-                            <p class="tag">Amazon Echo Hardware</p>
-                            <p class="tag">AWS</p>
-                            <p class="tag">Spoontacular REST API</p>
-                    </div>
-                </div>
-</a><a class="project-card" href="http://the-programmers-notebook.herokuapp.com">                    <img class="project_image" src="/images/the-programmers-notebook.jpeg" />
-                <div class="project_details">
-                    <h2 class="detail_name">The Programmers Notebook</h2>
-                    <p class="detail_description"> Web based markdown & rich text notebook targeted towards programmers.  Designed to convert between markdown and html.</p>
-                    <div class="detail_tags">
-                            <p class="tag">Javascript</p>
-                            <p class="tag">Meteor</p>
-                            <p class="tag">MongoDB</p>
-                            <p class="tag">HTML</p>
-                            <p class="tag">SCSS</p>
-                            <p class="tag">Ace editor</p>
-                            <p class="tag">CKEditor</p>
-                            <p class="tag">Heroku</p>
-                    </div>
-                </div>
-</a><a class="project-card" href="https://github.com/joshherkness/Studr">                    <img class="project_image" src="/images/studr.jpg" />
-                <div class="project_details">
-                    <h2 class="detail_name">Studr</h2>
-                    <p class="detail_description"> Mobile application for iOS designed to ease the burden of creating study sessions.  Designed at MHacks VI.</p>
-                    <div class="detail_tags">
-                            <p class="tag">Swift</p>
-                            <p class="tag">Objective-C</p>
-                            <p class="tag">Firebase</p>
-                            <p class="tag">Xcode</p>
-                    </div>
-                </div>
+    <div class="bottom-wrapper">
+<a class="btn btn--light" href="https://github.com/joshherkness">        github
+</a><a class="btn btn--light" href="http://devpost.com/joshherkness?ref_content=user-portfolio&amp;ref_feature=portfolio&amp;ref_medium=global-nav">        devpost
+</a><a class="btn btn--light" href="http://www.joshherkness.com">        linkedin
 </a>    </div>
+</div>
+
+    <div class="section section--yellow">
+    <h1 class="section__title section__title--light section__title--underline-dark">I've been programming for...</h1>
+    <div class="counter-wrapper" id="seconds"></div>
+    <div class="counter-wrapper" id="broken"></div>
+    <label class="toggle-switch">
+        <h3 class="toggle-switch__label">Seconds</h3>
+        <input type="checkbox" id="format-checkbox" class="toggle-switch__input" />
+        <div class="toggle-switch__control"></div>
+        <h3 class="toggle-switch__label">Format</h3>
+    </label>
+</div>
+
+    
+<div class="section section--light" id="projects">
+  <h1 class="section__title section__title--dark section__title--underline-yellow">Projects</h1>
+  <div class="project-card-collection">
+      <div class="project-card">
+          <div class="project-card__image-container">
+              <img class="project-card__image" src="/images/invert.jpeg" />
+              <div class="project-card__tag-collection">
+                  <div class="tag tag--white">Swift</div>
+                  <div class="tag tag--white">SpriteKit</div>
+                  <div class="tag tag--white">Xcode</div>
+              </div>
+          </div>
+        <div class="project-card__details">
+          <h2 class="title">Orbit</h2>
+          <p class="description">
+            Mobile application for iOS.  Currently in development and working toward submitting to the app store.</p>
+        </div>
+        <div class="project-card__btn-collection">
+          <a  class="project-card__btn project-card__btn--disabled disabled">source</a>
+          <a  class="project-card__btn project-card__btn--disabled disabled">demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+          <div class="project-card__image-container">
+              <img class="project-card__image" src="/images/portfolio.png" />
+              <div class="project-card__tag-collection">
+                  <div class="tag tag--white">Javascript</div>
+                  <div class="tag tag--white">HTML</div>
+                  <div class="tag tag--white">SCSS</div>
+                  <div class="tag tag--white">Middleman</div>
+              </div>
+          </div>
+        <div class="project-card__details">
+          <h2 class="title">Portfolio</h2>
+          <p class="description">
+            A static portfolio website to serve as my landing page on the internet.  Currently being hosted on github pages.</p>
+        </div>
+        <div class="project-card__btn-collection">
+          <a href='https://github.com/joshherkness/Portfolio' class="project-card__btn ">source</a>
+          <a href='http://joshherkness.com' class="project-card__btn ">demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+          <div class="project-card__image-container">
+              <img class="project-card__image" src="/images/ramsay.png" />
+              <div class="project-card__tag-collection">
+                  <div class="tag tag--white">Javascript</div>
+                  <div class="tag tag--white">Node.js</div>
+                  <div class="tag tag--white">Amazon Alexa</div>
+                  <div class="tag tag--white">Amazon Echo Hardware</div>
+                  <div class="tag tag--white">AWS</div>
+                  <div class="tag tag--white">Spoontacular REST API</div>
+              </div>
+          </div>
+        <div class="project-card__details">
+          <h2 class="title">Ramsay</h2>
+          <p class="description">
+            Voice activated kitchen assistant skill for Amazon Alexa.  Designed and created at Spartahack 2016 in the span of 18 hours.</p>
+        </div>
+        <div class="project-card__btn-collection">
+          <a href='https://github.com/joshherkness/Ramsay' class="project-card__btn ">source</a>
+          <a href='https://www.youtube.com/watch?v=aGpUHKqCg4k' class="project-card__btn ">demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+          <div class="project-card__image-container">
+              <img class="project-card__image" src="/images/the-programmers-notebook.jpeg" />
+              <div class="project-card__tag-collection">
+                  <div class="tag tag--white">Javascript</div>
+                  <div class="tag tag--white">Meteor</div>
+                  <div class="tag tag--white">MongoDB</div>
+                  <div class="tag tag--white">HTML</div>
+                  <div class="tag tag--white">SCSS</div>
+                  <div class="tag tag--white">Ace editor</div>
+                  <div class="tag tag--white">CKEditor</div>
+                  <div class="tag tag--white">Heroku</div>
+              </div>
+          </div>
+        <div class="project-card__details">
+          <h2 class="title">The Programmers Notebook</h2>
+          <p class="description">
+            Web based markdown & rich text notebook targeted towards programmers.  Designed to convert between markdown and html.</p>
+        </div>
+        <div class="project-card__btn-collection">
+          <a href='https://github.com/joshherkness/The-Programmers-Notebook' class="project-card__btn ">source</a>
+          <a href='http://the-programmers-notebook.herokuapp.com' class="project-card__btn ">demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+          <div class="project-card__image-container">
+              <img class="project-card__image" src="/images/studr.jpg" />
+              <div class="project-card__tag-collection">
+                  <div class="tag tag--white">Swift</div>
+                  <div class="tag tag--white">Objective-C</div>
+                  <div class="tag tag--white">Firebase</div>
+                  <div class="tag tag--white">Xcode</div>
+              </div>
+          </div>
+        <div class="project-card__details">
+          <h2 class="title">Studr</h2>
+          <p class="description">
+            Mobile application for iOS designed to ease the burden of creating study sessions.  Designed at MHacks VI in the span of 36 hours.</p>
+        </div>
+        <div class="project-card__btn-collection">
+          <a href='https://github.com/joshherkness/Studr' class="project-card__btn ">source</a>
+          <a href='http://devpost.com/software/ramsay' class="project-card__btn ">demo</a>
+        </div>
+      </div>
+  </div>
 </div>
 
 </div>
