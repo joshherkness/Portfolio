@@ -17,7 +17,9 @@
   src: url("/fonts/DINPro-Bold/DINPro-Bold.eot");
   src: url("/fonts/DINPro-Bold/DINPro-Bold.eot?#iefix") format('embedded-opentype'), url("/fonts/DINPro-Bold/DINPro-Bold.woff") format('woff'), url("/fonts/DINPro-Bold/DINPro-Bold.ttf") format('truetype'), url("/fonts/DINPro-Bold/DINPro-Bold.svg") format('svg');
   font-weight: bold; }
-/* Coolors Exported Palette - coolors.co/fffaf9-31143d-f2eb59-3b475b-120516 */
+/*
+ * _config.scss
+ */
 /* line 7, modules/_base.scss */
 html {
   font-size: 62.5%;
