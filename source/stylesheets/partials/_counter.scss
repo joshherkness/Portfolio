@@ -1,72 +1,71 @@
+// _counter.scss
 
 .counter-wrapper {
 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin: 50px;
+
+  .display-card {
+
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 
-    margin: 50px;
+    flex: 0 0 auto;
 
-    .display-card {
+    .display-content {
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+
+      height: 60px;
+      background-color: white;
+      color: $tolopea;
+      font-size: 20px;
+      font-weight: 500;
+      border-radius: 10px;
+      box-shadow: 0 0 60px transparentize($tolopea, 0.9);
+      margin: 10px;
+      @include sm {
+        font-size: 30px;
+      }
+      @include md {
+        font-size: 30px;
+      }
+
+      .digit-card {
 
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
 
-        flex: 0 0 auto;
+        padding: 0 12px;
+        height: 100%;
 
-        .display-content {
-
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
-
-            height: 60px;
-            background-color: white;
-            color: $tolopea;
-            font-size: 20px;
-            font-weight: 500;
-            border-radius: 10px;
-            box-shadow: 0 0 60px transparentize($tolopea, 0.9);
-            margin: 10px;
-
-            @include sm {
-                font-size: 30px;
-            }
-
-            @include md {
-                font-size: 30px;
-            }
-
-            .digit-card {
-
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: center;
-                align-items: center;
-
-                padding: 0 12px;
-                height: 100%;
-
-                &:not(:first-child) {
-                    border-left: 1px solid $aqua-haze;
-                }
-
-                .digit {
-                    flex: 0 0 auto;
-                }
-            }
+        &:not(:first-child) {
+          border-left: 1px solid $aqua-haze;
         }
 
-        .comma-card {
-            position: relative;
-            left: 0.15em;
-            display: inline-block;
-            z-index: 100;
-            text-align:right;
+        .digit {
+          flex: 0 0 auto;
         }
+      }
     }
+
+    .comma-card {
+      position: relative;
+      left: 0.15em;
+      display: inline-block;
+      z-index: 100;
+      text-align: right;
+    }
+  }
 }

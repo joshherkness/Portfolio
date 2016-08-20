@@ -1,0 +1,36 @@
+// _buttons.scss
+
+$_button-border-radius: 50px;
+
+.btn {
+  margin       : 0 0.5rem;
+  padding      : 10px 20px;
+  border-radius: $_button-border-radius;
+
+  &:link,
+  &:visited {
+    text-decoration: none; // Remove the underline
+  }
+}
+
+.btn-primary {
+  @extend .btn;
+  @at-root #{&}__light {
+    color           : $tolopea;
+    background-color: white;
+    border          : 1px solid $aqua-haze;
+    box-shadow      : $idle-shadow;
+
+    &:active,
+    &:hover {
+      background-color: $aqua-haze;
+      box-shadow      : $active-shadow;
+    }
+  }
+  @at-root #{&}--dark {
+    //
+  }
+  @at-root #{&}--yellow {
+    //
+  }
+}

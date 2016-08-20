@@ -1,0 +1,24 @@
+// _tags.scss
+
+$_tag-border-radius: 10px;
+
+.tag {
+  padding      : 2px 10px;
+  margin       : 5px;
+  font-weight  : $semibold;
+  font-size    : 0.6rem;
+  line-height  : 1.2rem;
+  font-style   : italic;
+  border-radius: $_tag-border-radius;
+  box-shadow   : $idle-shadow;
+}
+
+.tag--white-opaque {
+  color           : $secondary-color;
+  background-color: rgba(white, 0.25);
+}
+
+.tag--white {
+  color           : $secondary-color;
+  background-color: white;
+}

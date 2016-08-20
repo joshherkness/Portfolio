@@ -1,0 +1,59 @@
+// _switches.scss
+
+$_switch-transition: 0.1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$_switch-width: 3em;
+$_switch-height: $_switch-width/2;
+
+.switch {
+  // Layout
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch__label {
+  padding: 0 20px;
+  color: white;
+}
+
+.switch__control {
+  position: relative;
+  display: block;
+  width: $_switch-width;
+  height: $_switch-height;
+  transition: $_switch-transition;
+  border: 4px solid white;
+  border-radius: $_switch-height;
+  background-color: white;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: $_switch-width/2;
+    height: $_switch-height;
+    content: '';
+    transition: $_switch-transition;
+    border-radius: 50%;
+    background-color: $bananna-yellow;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+input.switch__input {
+  display: none; // Hide the check box
+
+  &:checked + .switch__control {
+    border-color: $tolopea;
+    background-color: $tolopea;
+
+    &:after {
+      left: $_switch-width/2;
+    }
+  }
+}

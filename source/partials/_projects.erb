@@ -1,7 +1,7 @@
 <%# projects.erb %>
 
-<div class="section section--light" id="projects">
-  <h1 class="section__title section__title--dark section__title--underline-yellow">Projects</h1>
+<div class="section bc-white" id="projects">
+  <h1 class=" cl-secondary ul ul--primary">Projects</h1>
   <div class="project-card-collection">
     <% data.projects.each do |project| %>
       <div class="project-card">
@@ -16,9 +16,8 @@
           </div>
         <% end %>
         <div class="project-card__details">
-          <h2 class="title"><%= project['name'] %></h2>
-          <p class="description">
-            <%= project['description'] %></p>
+          <h4 class="title"><strong><%= project['name'] %></strong></h4>
+          <p class="cl-tertiary"><%= project['description'] %></p>
         </div>
         <div class="project-card__btn-collection">
           <a <% if project['source'] %>href='<%=project['source']%>'<%end%> class="project-card__btn <% if not project['source'] %>project-card__btn--disabled disabled<% end %>">source</a>

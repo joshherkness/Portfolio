@@ -1,57 +1,88 @@
 // _header.scss
+
 .header {
+  // Layout
+  display      : flex;
+  flex-flow    : column nowrap;
+  height       : 100vh;
+  margin-bottom: 100px;
+
+  .top-wrapper {
     // Layout
-    display: flex;
-    flex-flow: column nowrap;
-    height: 100vh;
-    margin-bottom: 100px;
-    .top-wrapper {
-        // Layout
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        padding: 40px;
-        .profile {
-            // Layout
-            flex: 0 0 auto;
-            overflow: hidden;
-            border-radius: 50%;
-            width: 4em;
-            height: 4em;
-            background-size: cover;
-            background-image: url('/images/profile-min.jpg');
-            filter:saturate(120%);
-            &:hover {
-                background-image: url('/images/profile_cool-min.jpg');
-                filter:saturate(1000%) hue-rotate(275deg);
-                cursor: pointer;
-            }
-        }
-        .name {
-            // Layout
-            flex: 0 1 auto;
-            @mixin lg {
-                flex: 0 0 auto;
-            }
-            margin: 0 30px;
-            // Style
-            color: $tolopea;
-            border-bottom-color: $bananna-yellow;
-        }
+    display    : flex;
+    flex-flow  : row nowrap;
+    align-items: center;
+    padding    : 40px;
+
+    .profile {
+      // Layout
+      flex            : 0 0 auto;
+      overflow        : hidden;
+      border-radius   : 50%;
+      width           : 4em;
+      height          : 4em;
+      background-size : cover;
+      background-image: url('/images/profile-min.jpg');
+      filter:saturate(120%);
+
+      &:hover {
+        background-image: url('/images/profile_cool-min.jpg');
+        filter:saturate(1000%) hue-rotate(275deg);
+        cursor          : pointer;
+      }
     }
-    .hero-wrapper {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        flex: 1 1 auto;
-        color: darken($aqua-haze, 4); // Temp
+
+    .name {
+      // Layout
+      flex               : 0 1 auto;
+      @mixin lg {
+        flex: 0 0 auto;
+      }
+      margin             : 0 30px;
+      // Style
+      color              : $tolopea;
+      border-bottom-color: $bananna-yellow;
     }
-    .bottom-wrapper {
-        // Layout
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        padding: 1rem;
-    }
+  }
+
+  .hero-wrapper {
+    display        : flex;
+    flex-flow      : column wrap;
+    justify-content: center;
+    align-items    : center;
+    flex           : 1 1 auto;
+    color          : darken($aqua-haze, 4); // Temp
+  }
+
+  .bottom-wrapper {
+    // Layout
+    display        : flex;
+    flex-flow      : row wrap;
+    justify-content: center;
+    padding        : 1rem;
+  }
+}
+
+.header {
+  // Layout
+  display      : flex;
+  flex-flow    : column nowrap;
+  height       : 100vh;
+  margin-bottom: 100px;
+
+  .intro-wrapper {
+    display        : flex;
+    flex-flow      : row wrap;
+    justify-content: center;
+    align-items    : center;
+    flex           : 1 1 auto;
+  }
+
+  .social-wrapper {
+    // Layout
+    display        : flex;
+    flex-flow      : row wrap;
+    justify-content: center;
+    padding        : 1rem;
+  }
 }
