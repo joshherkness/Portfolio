@@ -5,14 +5,12 @@
  */
 .card {
   margin          : 30px;
-  border          : $primary-border;
-  transition      : all 0.20s ease-out;
   background-color: white;
-  box-shadow      : $idle-shadow;
+  border          : $primary-border;
+  @include transition(all 0.20s ease-out);
   @include xs {
-    border-radius: 5px;
-    box-shadow   : $idle-shadow;
-    overflow     : hidden;
+    box-shadow: $idle-shadow;
+    overflow  : hidden;
 
     &:hover {
       box-shadow: $active-shadow;
@@ -33,7 +31,7 @@
   align-items    : stretch;
   flex           : 0 0 90%;
   @include xs {
-    flex  : 0 0 300px;
+    flex  : 0 0 400px;
     margin: 20px;
   }
 }
@@ -49,21 +47,13 @@
 }
 
 .project-card__tag-collection {
-  display  : flex;
-  flex-flow: row wrap;
-  position : absolute;
-  top      : 0;
-  left     : 0;
-  padding  : 0;
-  @include sm {
-    opacity: 0;
-  }
+  @include display(flex);
+  @include flex-flow(row wrap);
+  margin: auto 1em 1em;
 }
 
-// Show tags
-.project-card:hover .project-card__tag-collection {
-  opacity   : 1;
-  transition: all 0.30s cubic-bezier(0, 0, 0, 1.13);
+.project-card:hover .project-card__image {
+  filter: grayscale(1);
 }
 
 .project-card__details {
@@ -75,7 +65,8 @@
   }
 
   .description {
-    color: $very-light-gray;
+    color      : $very-light-gray;
+    text-indent: px;
   }
 }
 
@@ -108,51 +99,4 @@
   &:hover {
     background-color: inherit;
   }
-}
-
-/*
- * Intro card
- */
-
-.intro-card {
-  @extend .card;
-  display        : flex;
-  flex-flow      : column nowrap;
-  justify-content: center;
-  flex           : 0 0 100%;
-  @include xs {
-    flex: 0 0 75%;
-  }
-  @include sm {
-    flex: 0 0 350px;
-  }
-}
-
-.intro-card__header-image-container {
-  position: relative;
-  width   : 100%;
-  height  : 200px;
-  overflow: hidden;
-}
-
-.intro-card__header-image {
-  position: absolute;
-  right   : 0;
-  bottom  : 0;
-  width   : 100%;
-  height  : auto;
-  overflow: hidden;
-  filter: blur(15px) saturate(2);
-}
-
-.intro-card__profile-image {
-  background-color: white;
-  display         : block;
-  position        : relative;
-  top             : -75px;
-  left            : calc(50% - 75px - 10px);
-  width           : 150px;
-  border          : 10px solid white;
-  border-radius   : 50%;
-  box-shadow      : $idle-shadow;
 }

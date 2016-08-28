@@ -1,6 +1,6 @@
 <%# projects.erb %>
 
-<div class="section bc-white" id="projects">
+<section class="section bc-white" id="projects">
   <h1 class=" cl-secondary ul ul--primary">Projects</h1>
   <div class="project-card-collection">
     <% data.projects.each do |project| %>
@@ -8,16 +8,16 @@
         <% if project['image'] %>
           <div class="project-card__image-container">
               <%= image_tag project['image'], :class => 'project-card__image' %>
-              <div class="project-card__tag-collection">
-                <% project['tags'].each do |tag| %>
-                  <div class="tag tag--white"><%= tag %></div>
-                <% end %>
-              </div>
           </div>
         <% end %>
         <div class="project-card__details">
           <h4 class="title"><strong><%= project['name'] %></strong></h4>
           <p class="cl-tertiary"><%= project['description'] %></p>
+        </div>
+        <div class="project-card__tag-collection">
+          <% project['tags'].each do |tag| %>
+            <div class="tag tag--disabled"><%= tag %></div>
+          <% end %>
         </div>
         <div class="project-card__btn-collection">
           <a <% if project['source'] %>href='<%=project['source']%>'<%end%> class="project-card__btn <% if not project['source'] %>project-card__btn--disabled disabled<% end %>">source</a>
@@ -26,4 +26,4 @@
       </div>
     <% end %>
   </div>
-</div>
+</section>

@@ -1,5 +1,13 @@
 // _base.scss
 
+body {
+  //overflow-x: hidden;
+  @include selection {
+    background-color: $primary-color;
+    color           : $secondary-color;
+  }
+}
+
 .section {
   display        : flex;
   flex-flow      : column nowrap;
@@ -43,11 +51,14 @@
 .bc {
   @at-root #{&}-primary {
     background-color: $primary-color;
+    @include text-decoration-color(white);
   }
   @at-root #{&}-secondary {
     background-color: $secondary-color;
+    @include text-decoration-color(white);
   }
   @at-root #{&}-white {
     background-color: white;
+    @include text-decoration-color($primary-color);
   }
 }

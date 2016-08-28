@@ -1,0 +1,43 @@
+// _osx-title-bar.scss
+
+$_osx-window-border-radius: 5px;
+$_osx-window__title-bar-height: 40px;
+$_title-bar__item-width: 13px;
+$_title-bar__item-border-radius: 50%;
+$_title-bar__item-margin: 5px;
+
+$_background-color: $aqua-haze;
+$_title-bar__item-color--first: $bananna-yellow;
+$_title-bar__item-color: lighten($tolopea, 20);
+
+.osx-window {
+  margin          : 20px;
+  border          : $primary-border;
+  border-radius   : $_osx-window-border-radius;
+  background-color: $_background-color;
+  overflow        : auto;
+}
+
+.osx-window__content {}
+
+.osx-window__title-bar {
+  height: $_osx-window__title-bar-height;
+  width : 100%;
+  @include display(flex);
+  @include flex-flow(row nowrap);
+  @include justify-content(flex-start);
+  @include align-items(center);
+
+  .title-bar__item {
+    width        : $_title-bar__item-width;
+    height       : $_title-bar__item-width;
+    margin       : $_title-bar__item-margin;
+    border-radius: $_title-bar__item-border-radius;
+    background   : $_title-bar__item-color;
+
+    &:first-child {
+      margin    : 0 $_title-bar__item-margin 0 $_title-bar__item-margin * 2;
+      background: $_title-bar__item-color--first;
+    }
+  }
+}

@@ -1,13 +1,8 @@
 // _projects.scss
 
 .project-card-collection {
-
-  display         : flex;
-  flex-flow       : row wrap;
-  justify-content : center;
-  align-items     : stretch;
-  background-color: $aqua-haze;
-  @include sm {
-    background-color: transparent;
-  }
+  @include display(flex);
+  @include flex-flow(row wrap);
+  @include align-items(stretch);
+  @include justify-content(center);
 }

@@ -15,6 +15,7 @@ body {
   line-height             : 1.4em;
   color                   : black;
   background              : white;
+  margin                  : 0;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -61,6 +62,25 @@ h4 {
 
 strong {
   font-weight: $semibold;
+}
+
+code {
+  font-family: $mono;
+  font-wight : normal;
+}
+
+// Code block
+pre {
+  margin: 0;
+
+  code {
+    font-weight: normal;
+  }
+
+}
+
+u {
+  text-decoration-color: inherit;
 }
 
 .ul {
