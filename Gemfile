@@ -17,3 +17,6 @@ gem 'middleman-gh-pages'
 # Syntax
 gem 'redcarpet'
 gem 'middleman-syntax'
+
+# Sass
+gem 'bourbon'

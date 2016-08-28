@@ -1,0 +1,99 @@
+// _typography.scss
+
+$sans-serif: 'DINPro', Helvetica, Verdana, sans-serif;
+$serif: 'Hind Guntur', serif;
+$mono: 'Source Code Pro', Courier, mono;
+
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+
+body {
+  font-family             : $sans-serif;
+  font-weight             : $light;
+  line-height             : 1.4em;
+  color                   : black;
+  background              : white;
+  margin                  : 0;
+  -webkit-text-size-adjust: 100%;
+}
+
+p {
+  font-size  : 1em;
+  font-family: $serif;
+  margin     : 1.0em 0;
+}
+
+h1 {
+  font-size    : 2.074em;
+  font-weight  : $semibold;
+  font-style   : italic;
+  margin-bottom: 0.8em;
+}
+
+h2 {
+  font-size    : 1.728em;
+  font-weight  : $semibold;
+  margin-bottom: 0.75em;
+}
+
+h3 {
+  font-size  : 1.44em;
+  font-weight: $normal;
+  margin     : 0.6em 0;
+}
+
+h4 {
+  font-size  : 1.2em;
+  font-weight: $normal;
+  margin     : 0.5em 0;
+}
+
+h1,
+h2 {
+  line-height: 1.4em;
+}
+
+h3,
+h4 {
+  line-height: 1.8em;
+}
+
+strong {
+  font-weight: $semibold;
+}
+
+code {
+  font-family: $mono;
+  font-wight : normal;
+}
+
+// Code block
+pre {
+  margin: 0;
+
+  code {
+    font-weight: normal;
+  }
+
+}
+
+u {
+  text-decoration-color: inherit;
+}
+
+.ul {
+
+  border-bottom-width: 0.15em;
+  border-bottom-style: solid;
+  @at-root #{&}--primary {
+    border-bottom-color: $primary-color;
+  }
+  @at-root #{&}--secondary {
+    border-bottom-color: $secondary-color;
+  }
+  @at-root #{&}--white {
+    border-bottom-color: white;
+  }
+}

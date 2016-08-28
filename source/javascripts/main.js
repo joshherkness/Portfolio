@@ -4,14 +4,22 @@
 
 //= require_tree .
 
-window.onload = function () {
+window.onload = function() {
+
+    // Highlight.js
+    $(document).ready(function() {
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+    });
+
 
     // Start date for counter ( The date that I began programming )
     var startDate = new Date("September 30, 2012 12:00:00");
 
     // Initially update the interface, then continuousely update every second.
     updateCounter(startDate);
-    setInterval(function () {
+    setInterval(function() {
         updateCounter(startDate);
     }, 1000);
 
@@ -21,7 +29,7 @@ window.onload = function () {
     $('#textbox1').val($(this).is(':checked'));
 
     $('#format-checkbox').change(function() {
-        if($(this).is(":checked")) {
+        if ($(this).is(":checked")) {
             $(this).attr("checked", "false");
             $('#seconds').hide();
             $('#broken').show();
@@ -68,7 +76,7 @@ function counterCardWithValue(value, tag, minimumSize) {
     }
     card += '</div>';
 
-    card += '<div class="tag tag--white-opaque">' + tag + '</div>' ;
+    card += '<div class="tag tag--white-opaque">' + tag + '</div>';
 
     card += '</div>';
 

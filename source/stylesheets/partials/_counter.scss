@@ -1,72 +1,66 @@
+// _counter.scss
+
+// TODO: Clean up unnecessary code 👊
 
 .counter-wrapper {
+  @include display(flex);
+  @include flex-flow(row wrap);
+  @include justify-content(center);
+  @include align-items(center);
 
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+  .display-card {
+    @include flex(0 0 auto);
+    @include display(flex);
+    @include flex-flow(column nowrap);
+    @include justify-content(center);
+    @include align-items(center);
 
-    margin: 50px;
+    .display-content {
+      @include display(flex);
+      @include flex-flow(row nowrap);
+      @include justify-content(center);
+      @include align-items(center);
 
-    .display-card {
+      height          : 60px;
+      background-color: white;
+      color           : $tolopea;
+      font-size       : 20px;
+      font-weight     : 500;
+      border-radius   : 10px;
+      box-shadow      : 0 0 60px transparentize($tolopea, 0.9);
+      margin          : 10px;
+      @include sm {
+        font-size: 30px;
+      }
+      @include md {
+        font-size: 30px;
+      }
 
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
+      .digit-card {
+        @include display(flex);
+        @include flex-flow(row nowrap);
+        @include justify-content(center);
+        @include align-items(center);
 
-        flex: 0 0 auto;
+        padding: 0 12px;
+        height : 100%;
 
-        .display-content {
-
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
-
-            height: 60px;
-            background-color: white;
-            color: $tolopea;
-            font-size: 20px;
-            font-weight: 500;
-            border-radius: 10px;
-            box-shadow: 0 0 60px transparentize($tolopea, 0.9);
-            margin: 10px;
-
-            @include sm {
-                font-size: 30px;
-            }
-
-            @include md {
-                font-size: 30px;
-            }
-
-            .digit-card {
-
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: center;
-                align-items: center;
-
-                padding: 0 12px;
-                height: 100%;
-
-                &:not(:first-child) {
-                    border-left: 1px solid $aqua-haze;
-                }
-
-                .digit {
-                    flex: 0 0 auto;
-                }
-            }
+        &:not(:first-child) {
+          border-left: 1px solid $aqua-haze;
         }
 
-        .comma-card {
-            position: relative;
-            left: 0.15em;
-            display: inline-block;
-            z-index: 100;
-            text-align:right;
+        .digit {
+          flex: 0 0 auto;
         }
+      }
     }
+
+    .comma-card {
+      position  : relative;
+      left      : 0.15em;
+      display   : inline-block;
+      z-index   : 100;
+      text-align: right;
+    }
+  }
 }

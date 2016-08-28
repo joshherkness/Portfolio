@@ -1,0 +1,37 @@
+// _seperators.scss
+
+$_vertical-seperator-width: 2px;
+$_vertical-seperator-color: $aqua-haze;
+$_vertical-seperator-margin: 5% 0;
+
+$_vertical-seperator__label-border: 2px solid $bananna-yellow;
+$_vertical-seperator__label-color: $tolopea;
+$_vertical-seperator__label-background: white;
+$_vertical-seperator__label-padding: 0 10px;
+
+.vertical-seperator {
+  background: $_vertical-seperator-color;
+  margin    : $_vertical-seperator-margin;
+  max-height: $_vertical-seperator-width;
+  @include flex(0 0 $_vertical-seperator-width);
+  @include display(flex);
+  @include flex-flow(row nowrap);
+  @include justify-content(center);
+  @include align-items(center);
+  @include sm {
+     @include flex-direction(column);
+    height    : auto;
+    max-width : $_vertical-seperator-width;
+    max-height: none;
+  }
+
+  .vertical-seperator__label {
+    @extend h4;
+    margin    : 0;
+    border    : $_vertical-seperator__label-border;
+    color     : $_vertical-seperator__label-color;
+    background: $_vertical-seperator__label-background;
+    padding   : $_vertical-seperator__label-padding;
+    text-align: center;
+  }
+}

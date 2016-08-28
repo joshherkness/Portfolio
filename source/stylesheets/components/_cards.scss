@@ -1,0 +1,102 @@
+// _cards.scss
+
+/*
+ * Card
+ */
+.card {
+  margin          : 30px;
+  background-color: white;
+  border          : $primary-border;
+  @include transition(all 0.20s ease-out);
+  @include xs {
+    box-shadow: $idle-shadow;
+    overflow  : hidden;
+
+    &:hover {
+      box-shadow: $active-shadow;
+    }
+  }
+
+}
+
+/*
+ * Project card
+ */
+.project-card {
+  @extend .card;
+
+  display        : flex;
+  flex-flow      : column nowrap;
+  justify-content: center;
+  align-items    : stretch;
+  flex           : 0 0 90%;
+  @include xs {
+    flex  : 0 0 400px;
+    margin: 20px;
+  }
+}
+
+.project-card__image-container {
+  position   : relative;
+  overflow   : hidden;
+  line-height: 0;
+}
+
+.project-card__image {
+  width: 100%;
+}
+
+.project-card__tag-collection {
+  @include display(flex);
+  @include flex-flow(row wrap);
+  margin: auto 1em 1em;
+}
+
+.project-card:hover .project-card__image {
+  filter: grayscale(1);
+}
+
+.project-card__details {
+  background-color: white;
+  padding         : 0 1.4em;
+
+  .title {
+    text-align: center;
+  }
+
+  .description {
+    color      : $very-light-gray;
+    text-indent: px;
+  }
+}
+
+.project-card__btn-collection {
+  margin-top: auto;
+  display   : flex;
+  flex-flow : row nowrap;
+  border-top: 1px solid $aqua-haze;
+}
+
+.project-card__btn {
+  flex           : 1 0 auto;
+  text-align     : center;
+  color          : $tolopea;
+  padding        : 15px 0;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $aqua-haze;
+  }
+
+  &:not(:first-child) {
+    border-left: 1px solid $aqua-haze;
+  }
+}
+
+.project-card__btn--disabled {
+  color: $disabled;
+
+  &:hover {
+    background-color: inherit;
+  }
+}

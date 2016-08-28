@@ -1,0 +1,47 @@
+// _variables.scss
+
+// Colors
+$bananna-yellow      : #FEDB37;
+$tolopea             : #2D2540;
+$oxford-blue         : #3b475b;
+$aqua-haze           : #EFF3F7;
+$very-light-gray     : #89959a;
+
+// Site Colors
+$primary-color       : $bananna-yellow;
+$secondary-color     : $tolopea;
+$primary-border-color: $aqua-haze;
+$primary-text-color  : $very-light-gray;
+$disabled            : $aqua-haze;
+$shadow-color        : transparentize($tolopea, 0.95);
+
+// Social Colors
+$facebook_color      : #365397;
+$twitter_color       : #00a9f1;
+$linkedin_color      : #006db3;
+$apple_color         : #737373;
+$google_color        : #4285f4;
+$google_plus_color   : #e0452c;
+$youtube_color       : #ff3333;
+$vimeo_color         : #48b6ed;
+$pinterest_color     : #ce1a19;
+$yelp_color          : #c30f00;
+$dribbble_color      : #ed4584;
+$amazon_color        : #ff9700;
+$ebay_color          : #083790;
+$skype_color         : #00acf4;
+$instagram_color     : #396d9a;
+$dropbox_color       : #0d84de;
+$flickr_color        : #ea0066;
+$github_color        : #2f2f2f;
+$basecamp_color      : #6bbd6d;
+$tumblr_color        : #304c68;
+$foursquare_color    : #207dc5;
+$box_color           : #1277bc;
+
+// Borders
+$primary-border      : 1px solid $primary-border-color;
+
+// Shadows
+$idle-shadow         : 0 0 10kkkkkpx transparentize($tolopea, 0.95);
+$active-shadow       : 0 0 60px transparentize($tolopea, 0.9);

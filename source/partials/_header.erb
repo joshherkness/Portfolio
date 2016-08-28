@@ -1,18 +1,46 @@
-<%# header.erb %>
-<div class="header">
-    <div class="top-wrapper">
-        <div class="profile"></div>
-        <h1 class="name">Joshua Herkness.</h1>
+<!-- <%# header.erb %> -->
+
+<header class="window-section bc-white">
+  <div class="window-section__content">
+    <div class="content__copy">
+      <h1 class="copy-section__heading cl-secondary ul ul--primary">Joshua Herkness</h1>
+      <p class="copy-section__paragraph">
+        Hello, my name is Joshua Herkness.  I study computer science at Oakland University, currently finishing my junior year.  This website was created to showcase some of the many projects that I have been working on throughout my journey.  Some of my main interests are in front end, iOS, and web development.
+      </p>
     </div>
-    <div class="hero-wrapper">
-        <h2>Sorry for the mess</h2>
-        <p>I'm currently renovating right now, so it may be a bit dusty around here.</p>
+    <div class="content__window">
+      <div class="osx-window">
+        <div class="osx-window__title-bar">
+          <div class="title-bar__item"></div>
+          <div class="title-bar__item"></div>
+          <div class="title-bar__item"></div>
+        </div>
+        <div class="osx-window__content">
+
+          <pre><code>import Human;
+
+public class Joshua: Human {
+
+  let fullName = "Joshua Herkness"
+
+  var school = "Oakland University"
+  var major = "Computer Science"
+  var classStanding = "Junior"
+
+  var interests:[String] = ["Front End Development",
+                            "iOS Development",
+                            "Web Development"]
+
+}</code></pre>
+        </div>
+      </div>
     </div>
-    <div class="bottom-wrapper">
-        <% data.social.each do |social| %>
-        <% link_to social['link'], :class => 'btn btn--light' do %>
-        <%= social['name'] %>
-        <% end %>
-        <% end %>
-    </div>
-</div>
+  </div>
+  <div class="window-section__footer">
+      <% data.social.each do |social| %>
+      <% link_to social['link'], :class => 'btn btn-primary__light' do %>
+      <%= social['name'] %>
+      <% end %>
+      <% end %>
+  </div>
+</header>

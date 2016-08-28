@@ -1,0 +1,64 @@
+// _base.scss
+
+body {
+  //overflow-x: hidden;
+  @include selection {
+    background-color: $primary-color;
+    color           : $secondary-color;
+  }
+}
+
+.section {
+  display        : flex;
+  flex-flow      : column nowrap;
+  justify-content: center;
+  align-items    : center;
+  @at-root #{&}--yellow {
+    background-color: $bananna-yellow;
+  }
+  @at-root #{&}--light {
+    background-color: white;
+  }
+  @at-root #{&}--dark {
+    background-color: $tolopea;
+  }
+}
+
+/*
+ * Defines the text color property of a block.
+ */
+.cl {
+  @at-root #{&}-primary {
+    color: $primary-color;
+  }
+  @at-root #{&}-secondary {
+    color: $secondary-color;
+  }
+  @at-root #{&}-tertiary {
+    color: $primary-text-color;
+  }
+  @at-root #{&}-white {
+    color: white;
+  }
+  @at-root #{&}-disabled {
+    color: $disabled;
+  }
+}
+
+/*
+ * Defines the background color property of a block.
+ */
+.bc {
+  @at-root #{&}-primary {
+    background-color: $primary-color;
+    @include text-decoration-color(white);
+  }
+  @at-root #{&}-secondary {
+    background-color: $secondary-color;
+    @include text-decoration-color(white);
+  }
+  @at-root #{&}-white {
+    background-color: white;
+    @include text-decoration-color($primary-color);
+  }
+}
